@@ -3857,14 +3857,12 @@
         "createdTime": {
           "type": "string",
 		  "format": "date-time",
-          "description": "A combined UTC date and time string that describes the created time of snapshot.",
-          "maxLength": 128
+          "description": "A combined UTC date and time string that describes the created time of snapshot."
         },
         "lastUpdateTime": {
           "type": "string",
 		  "format": "date-time",
-          "description": "A combined UTC date and time string that describes the last modify time of snapshot.",
-          "maxLength": 128
+          "description": "A combined UTC date and time string that describes the last modify time of snapshot."
         }
       }
     },    
@@ -3907,7 +3905,7 @@
             "modelAsString": false
           },
           "enum": [
-            "nonstarted",
+            "notstarted",
             "running",
             "succeeded",
             "failed"
@@ -3926,6 +3924,10 @@
         "resourceLocation": {
           "type": "string",
           "description": "Show resource location."
+        },
+        "message": {
+          "type": "string",
+          "description": "Show return message."
         }
       }
     }

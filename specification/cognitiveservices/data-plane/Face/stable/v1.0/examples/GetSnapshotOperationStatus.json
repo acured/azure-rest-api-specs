@@ -11,7 +11,8 @@
         "status": "succeeded",
         "createdTime": "2017-12-21T12:57:27.00Z",
         "lastActionTime": "2017-12-21T12:57:30.00Z",
-        "resourceLocation": "/snapshots/e58b3f08-1e8b-4165-81df-aa9858f233dc"
+        "resourceLocation": "/snapshots/e58b3f08-1e8b-4165-81df-aa9858f233dc",
+        "message": "this is a return message."
       }
     }
   }
