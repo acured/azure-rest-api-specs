@@ -2128,6 +2128,275 @@
           }
         }
       }
+    },
+    "/snapshots":{
+      "post": {
+        "description": "Take a snapshot.",
+        "operationId": "Snapshot_Take",
+        "parameters": [
+          {
+            "name": "body",
+            "description": "Request body for take a snapshot.",
+            "in": "body",
+            "required": true,
+            "x-ms-client-flatten": true,
+            "schema": {
+              "$ref": "#/definitions/TakeSnapshotContract"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "202": {
+            "description": "The take task was queued successfully.",
+			"headers":{
+              "Operation-Location": {
+                "description": "Operation name with id.",
+                "type": "string"
+                }
+              }
+          },
+          "default": {
+            "description": "Error response.",
+            "schema": {
+              "$ref": "#/definitions/APIError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "Take a snapshot example": {
+            "$ref": "./examples/TakeSnapshot.json"
+          }
+        }
+      },
+      "get": {
+        "description": "Get snapshot list.",
+        "operationId": "Snapshot_List",
+        "parameters": [
+          {
+            "name": "type",
+            "description": "User specified type.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "applyScope",
+            "description": "User specified apply scope.",
+            "in": "query",
+            "required": true,
+            "type": "array"			
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Get snapshot list successfully.",
+            "schema": {
+              "$ref": "#/definitions/Snapshots"
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "schema": {
+              "$ref": "#/definitions/APIError"
+            }
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "x-ms-examples": {
+          "Get snapshot list example": {
+            "$ref": "./examples/GetSnapshots.json"
+          }
+        }
+      }
+    },
+    "/snapshots/{snapshotId}":{
+      "get": {
+        "description": "Get a snapshot.",
+        "operationId": "Snapshot_Get",
+        "parameters": [
+          {
+            "$ref": "#/parameters/snapshotId"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Get a snapshot successfully.",
+            "schema": {
+              "$ref": "#/definitions/Snapshot"
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "schema": {
+              "$ref": "#/definitions/APIError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "Get a snapshot example": {
+            "$ref": "./examples/GetSnapshot.json"
+          }
+        }
+      },
+      "patch": {
+        "description": "Update a snapshot.",
+        "operationId": "Snapshot_Update",
+        "parameters": [
+          {
+            "$ref": "#/parameters/snapshotId"
+          },
+          {
+            "name": "body",
+            "description": "Request body for snapshot update operation.",
+            "in": "body",
+            "required": true,
+            "x-ms-client-flatten": true,
+            "schema": {
+              "$ref": "#/definitions/ApplyScopeAndContextContract"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "A successful call returns an empty response body."
+          },
+          "default": {
+            "description": "Error response.",
+            "schema": {
+              "$ref": "#/definitions/APIError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "Update snapshot example": {
+            "$ref": "./examples/UpdateSnapshot.json"
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete an existing snapshot.",
+        "operationId": "Snapshot_Delete",
+        "parameters": [
+          {
+            "$ref": "#/parameters/snapshotId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A successful call returns an empty response body."
+          },
+          "default": {
+            "description": "Error response.",
+            "schema": {
+              "$ref": "#/definitions/APIError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "Delete a snapshot example": {
+            "$ref": "./examples/DeleteSnapshot.json"
+          }
+        }
+      }
+    },
+    "/snapshots/{snapshotId}/apply":{
+      "post": {
+        "description": "Apply a snapshot.",
+        "operationId": "Snapshot_Apply",
+        "parameters": [
+          {
+            "$ref": "#/parameters/snapshotId"
+          },
+          {
+            "name": "body",
+            "description": "Request body for apply a snapshot.",
+            "in": "body",
+            "required": true,
+            "x-ms-client-flatten": true,
+            "schema": {
+              "$ref": "#/definitions/ApplySnapshotContract"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "202": {
+            "description": "The apply task was queued successfully.",
+			"headers":{
+              "Operation-Location": {
+                "description": "Operation name with id.",
+                "type": "string"
+                }
+              }
+          },
+          "default": {
+            "description": "Error response.",
+            "schema": {
+              "$ref": "#/definitions/APIError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "Take a snapshot example": {
+            "$ref": "./examples/ApplySnapshot.json"
+          }
+        }
+      }
+    },
+    "/operations/{snapshotId}": {
+      "get": {
+        "description": "Retrieve the take/apply status of a snapshot operation.",
+        "operationId": "Snapshot_GetOperationStatus",
+        "parameters": [
+          {
+            "$ref": "#/parameters/snapshotId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A successful call returns the snapshot operation status.",
+            "schema": {
+              "$ref": "#/definitions/OperationStatus"
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "schema": {
+              "$ref": "#/definitions/APIError"
+            }
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "x-ms-examples": {
+          "Get snapshot operation status example": {
+            "$ref": "./examples/GetSnapshotOperationStatus.json"
+          }
+        }
+      }
     }
   },
   "x-ms-paths": {
@@ -3506,6 +3775,159 @@
           "maxLength": 16384
         }
       }
+    },
+    "TakeSnapshotContract": {
+      "type": "object",
+      "description": "A combination of data for take a snapshot.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "User specified type, maximum length is 128.",
+          "maxLength": 128
+        },
+        "objectId": {
+          "type": "string",
+          "description": "User specified objectId, maximum length is 128.",
+          "maxLength": 128
+        },
+        "ApplyScope": {
+          "type": "array",
+          "description": "Array of applyScope",
+          "items": {
+            "type": "string",
+            "format": "uuid",
+            "x-nullable": false
+          }
+        },
+        "context": {
+          "type": "string",
+          "description": "User specified context, maximum length is 128.",
+          "maxLength": 128
+        }
+      }
+    },
+    "ApplySnapshotContract": {
+      "type": "object",
+      "description": "A combination of data for apply a snapshot.",
+      "properties": {
+        "objectId": {
+          "type": "string",
+          "description": "User specified objectId, maximum length is 128.",
+          "maxLength": 128
+        },
+        "mode": {
+          "type": "string",
+          "description": "User specified context, maximum length is 128.",
+          "maxLength": 128
+        }
+      }
+    },
+    "Snapshot": {
+      "type": "object",
+      "description": "Snapshot object.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "description": "snapshot id, maximum length is 128."
+        },
+        "account": {
+          "type": "string",
+          "description": "User account."
+        },
+        "type": {
+          "type": "string",
+          "description": "User specified type, maximum length is 128.",
+          "maxLength": 128
+        },
+        "applyScope": {
+          "type": "array",
+          "description": "Array of applyScope",
+          "items": {
+            "type": "string",
+            "format": "uuid",
+            "x-nullable": false
+          }
+        },
+        "context": {
+          "type": "string",
+          "description": "User specified context, maximum length is 1024.",
+          "maxLength": 1024
+        },
+        "createdTime": {
+          "type": "string",
+		  "format": "date-time",
+          "description": "A combined UTC date and time string that describes the created time of snapshot.",
+          "maxLength": 128
+        },
+        "lastUpdateTime": {
+          "type": "string",
+		  "format": "date-time",
+          "description": "A combined UTC date and time string that describes the last modify time of snapshot.",
+          "maxLength": 128
+        }
+      }
+    },    
+	"Snapshots": {
+      "type": "array",
+      "description": "An array of Persons.",
+      "items": {
+        "$ref": "#/definitions/Snapshot"
+      }
+    },
+    "ApplyScopeAndContextContract": {
+      "type": "object",
+      "description": "A combination of user defined applyScope and user specified data for snapshot update.",
+      "properties": {
+        "applyScope": {
+          "type": "array",
+          "description": "Array of applyScope",
+          "items": {
+            "type": "string",
+            "format": "uuid",
+            "x-nullable": false
+          }
+        },
+        "context": {
+          "type": "string",
+          "description": "User specified context, maximum length is 1024.",
+          "maxLength": 1024
+        }
+      }
+    },
+    "OperationStatus": {
+      "type": "object",
+      "description": "Operation status object.",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Training status: notstarted, running, succeeded, failed..",
+          "x-ms-enum": {
+            "name": "OperationStatusType",
+            "modelAsString": false
+          },
+          "enum": [
+            "nonstarted",
+            "running",
+            "succeeded",
+            "failed"
+          ]
+        },
+        "createdTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "A combined UTC date and time string that describes the created time."
+        },
+        "lastActionTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "A combined UTC date and time string that describes the last modify time."
+        },
+        "resourceLocation": {
+          "type": "string",
+          "description": "Show resource location."
+        }
+      }
     }
   },
   "parameters": {
@@ -3631,6 +4053,17 @@
       "format": "uuid",
       "x-ms-parameter-location": "method",
       "collectionFormat": "csv"
+    },
+    "snapshotId": {
+      "name": "snapshotId",
+      "in": "path",
+      "description": "Id referencing a particular snapshot.",
+      "required": true,
+      "type": "string",
+      "x-ms-parameter-location": "method",
+      "collectionFormat": "csv",
+      "maxLength": 64,
+      "pattern": "^[a-z0-9-_]+$"
     },
     "Endpoint": {
       "name": "Endpoint",

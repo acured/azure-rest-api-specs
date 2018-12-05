@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "Endpoint": "{Endpoint}",
+    "Content-Type": "application/json",
+    "Ocp-Apim-Subscription-Key": "{API key}",
+    "snapshotId": "e58b3f08-1e8b-4165-81df-aa9858f233dc"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "e58b3f08-1e8b-4165-81df-aa9858f233dc",
+        "account": "/subscriptions/f9b96b36-1f5e-4021-8959-51527e26e6d3/resourceGroups/TestRG/providers/Microsoft.CognitiveServices/accounts/FaceTest01",
+        "type": "FaceList",
+        "applyScope": [
+          "subscriptionId1",
+          "subscriptionId2"
+        ],
+        "context": "User-provided data",
+        "createdTime": "2017-12-21T12:57:27.00Z",
+        "lastUpdateTime": "2017-12-21T12:57:30.00Z"
+      }
+    }
+  }
+}
