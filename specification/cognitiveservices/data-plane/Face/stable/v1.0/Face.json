@@ -2143,6 +2143,9 @@
             "schema": {
               "$ref": "#/definitions/TakeSnapshotContract"
             }
+          },
+          {
+            "$ref": "#/parameters/azureResourceId"
           }
         ],
         "consumes": [
@@ -2191,6 +2194,9 @@
             "in": "query",
             "required": true,
             "type": "array"			
+          },
+          {
+            "$ref": "#/parameters/azureResourceId"
           }
         ],
         "responses": {
@@ -2224,6 +2230,9 @@
         "parameters": [
           {
             "$ref": "#/parameters/snapshotId"
+          },
+          {
+            "$ref": "#/parameters/azureResourceId"
           }
         ],
         "consumes": [
@@ -2268,6 +2277,9 @@
             "schema": {
               "$ref": "#/definitions/ApplyScopeAndContextContract"
             }
+          },
+          {
+            "$ref": "#/parameters/azureResourceId"
           }
         ],
         "consumes": [
@@ -2296,6 +2308,9 @@
         "parameters": [
           {
             "$ref": "#/parameters/snapshotId"
+          },
+          {
+            "$ref": "#/parameters/azureResourceId"
           }
         ],
         "responses": {
@@ -2333,6 +2348,9 @@
             "schema": {
               "$ref": "#/definitions/ApplySnapshotContract"
             }
+          },
+          {
+            "$ref": "#/parameters/azureResourceId"
           }
         ],
         "consumes": [
@@ -2372,6 +2390,9 @@
         "parameters": [
           {
             "$ref": "#/parameters/snapshotId"
+          },
+          {
+            "$ref": "#/parameters/azureResourceId"
           }
         ],
         "responses": {
@@ -4066,6 +4087,14 @@
       "collectionFormat": "csv",
       "maxLength": 64,
       "pattern": "^[a-z0-9-_]+$"
+    },
+	"azureResourceId": {
+      "name": "Azure-Resource-Id",
+      "in": "header",
+      "description": "Id referencing a particular snapshot.",
+      "required": true,
+      "type": "string",
+      "x-ms-parameter-location": "method"
     },
     "Endpoint": {
       "name": "Endpoint",
