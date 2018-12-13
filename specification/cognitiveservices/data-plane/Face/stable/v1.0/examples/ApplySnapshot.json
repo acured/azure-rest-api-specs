@@ -7,8 +7,7 @@
     "body": {
       "objectId": "faceListId",
       "mode": "user provided mode"
-    },
-    "Azure-Resource-Id": "/subscriptions/79331569-6cd0-4d5a-b782-32a792136610"
+    }
   },
   "responses": {
     "202": {

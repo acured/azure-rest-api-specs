@@ -3,8 +3,7 @@
     "Endpoint": "{Endpoint}",
     "Content-Type": "application/json",
     "Ocp-Apim-Subscription-Key": "{API key}",
-    "snapshotId": "e58b3f08-1e8b-4165-81df-aa9858f233dc",
-    "Azure-Resource-Id": "/subscriptions/79331569-6cd0-4d5a-b782-32a792136610"
+    "snapshotId": "e58b3f08-1e8b-4165-81df-aa9858f233dc"
   },
   "responses": {
     "200": {
