@@ -1877,7 +1877,26 @@
       "get": {
         "description": "Retrieve information about all existing large face lists. Only largeFaceListId, name and userData will be returned.",
         "operationId": "LargeFaceList_List",
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "start",
+            "in": "query",
+            "required": false,
+            "description": "List large face lists from the least largeFaceListId greater than the \"start\". It contains no more than 64.",
+            "type": "string",
+            "maxLength": 64
+          },
+          {
+            "name": "top",
+            "in": "query",
+            "required": false,
+            "description": "The number of large face lists to list, ranging in [1, 1000]. Default is 1000.",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1000,
+            "default": 1000
+          }
+        ],
         "responses": {
           "200": {
             "description": "A successful call returns an array of largeFaceList.",
