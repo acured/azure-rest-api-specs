@@ -3463,7 +3463,7 @@
       "properties": {
         "status": {
           "type": "string",
-          "description": "Training status: notstarted, running, succeeded, failed. If the training process is waiting to perform, the status is notstarted. If the training is ongoing, the status is running. Status succeed means this person group or large person group is ready for Face - Identify, or this large face list is ready for Face - Find Similar. Status failed is often caused by no person or no persisted face exist in the person group or large person group, or no persisted face exist in the large face list.",
+          "description": "Training status: notstarted, running, succeeded, failed. If the person group or large person group or large face list has never been trained before, the status is notstarted. If the training is ongoing, the status is running. Status succeed means this person group or large person group is ready for Face - Identify, or this large face list is ready for Face - Find Similar. Status failed is often caused by no person or no persisted face exist in the person group or large person group, or no persisted face exist in the large face list.",
           "x-ms-enum": {
             "name": "TrainingStatusType",
             "modelAsString": false
@@ -3478,19 +3478,19 @@
         "createdDateTime": {
           "type": "string",
           "format": "date-time",
-          "description": "A combined UTC date and time string that describes the created time of the person group, large person group or large face list.",
+          "description": "A combined UTC date and time string that describes the last time when the large person group or person group or large face list is requested to train. E.g. 2018-10-15T11:51:27.6872495Z.",
           "x-ms-client-name": "created"
         },
         "lastActionDateTime": {
           "type": "string",
           "format": "date-time",
-          "description": "A combined UTC date and time string that describes the last modify time of the person group, large person group or large face list, could be null value when the group is not successfully trained.",
+          "description": "A combined UTC date and time string that describes the last time the large person group or person group or large face list's training status was modifed. E.g. 2018-10-15T11:51:27.8705696Z.",
           "x-ms-client-name": "lastAction"
         },
         "lastSuccessfulTrainingDateTime": {
           "type": "string",
           "format": "date-time",
-          "description": "A combined UTC date and time string that describes the last successful training time of the person group, large person group or large face list.",
+          "description": "A combined UTC date and time string that describes the large person group or person group or large face list's last successful training time. E.g. 2018-10-15T11:51:27.8705696Z.",
           "x-ms-client-name": "lastSuccessfulTraining"
         },
         "message": {
