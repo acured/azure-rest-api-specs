@@ -94,7 +94,7 @@
                   "type": "string"
                 },
                 "description": {
-                  "description": "Description of operation.",
+                  "description": "Decription of operation.",
                   "type": "string"
                 }
               }

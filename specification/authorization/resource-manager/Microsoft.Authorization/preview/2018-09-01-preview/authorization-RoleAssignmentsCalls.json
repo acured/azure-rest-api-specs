@@ -486,50 +486,30 @@
 				},
 				"canDelegate": {
 					"type": "boolean",
-					"description": "The Delegation flag for the role assignment"
+					"description": "The Delegation flag for the roleassignment"
 				}
 			},
 			"description": "Role Assignments filter"
 		},
 		"RoleAssignmentPropertiesWithScope": {
-      "properties": {
-        "scope": {
-          "type": "string",
-          "description": "The role assignment scope."
-        },
-        "roleDefinitionId": {
-          "type": "string",
-          "description": "The role definition ID."
-        },
-        "principalId": {
-          "type": "string",
-          "description": "The principal ID."
-        },
-        "principalType": {
-          "type": "string",
-          "description": "The principal type of the assigned principal ID.",
-          "enum": [
-            "User",
-            "Group",
-            "ServicePrincipal",
-            "Unknown",
-            "DirectoryRoleTemplate",
-            "ForeignGroup",
-            "Application",
-            "MSI",
-            "DirectoryObjectOrGroup",
-            "Everyone"
-          ],
-          "x-ms-enum": {
-            "name": "PrincipalType",
-            "modelAsString": true
-          }
-        },
-        "canDelegate": {
-          "type": "boolean",
-          "description": "The Delegation flag for the role assignment"
-        }
-      },
+			"properties": {
+				"scope": {
+					"type": "string",
+					"description": "The role assignment scope."
+				},
+				"roleDefinitionId": {
+					"type": "string",
+					"description": "The role definition ID."
+				},
+				"principalId": {
+					"type": "string",
+					"description": "The principal ID."
+				},
+				"canDelegate": {
+					"type": "boolean",
+					"description": "The Delegation flag for the roleassignment"
+				}
+			},
 			"description": "Role assignment properties with scope."
 		},
 		"RoleAssignment": {
@@ -605,7 +585,7 @@
         },
         "canDelegate": {
           "type": "boolean",
-          "description": "The delegation flag used for creating a role assignment"
+          "description": "The delgation flag used for creating a role assignment"
         }
       },
 			"required": [

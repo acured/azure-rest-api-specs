@@ -50,8 +50,8 @@
         "operationId": "AuthorizationServer_List",
         "description": "Lists a collection of authorization servers defined within a service instance.",
         "x-ms-examples": {
-          "ApiManagementListAuthorizationServers": {
-            "$ref": "./examples/ApiManagementListAuthorizationServers.json"
+          "ApiManagementListAuthorizationservers": {
+            "$ref": "./examples/ApiManagementListAuthorizationservers.json"
           }
         },
         "parameters": [
@@ -94,8 +94,8 @@
         "operationId": "AuthorizationServer_Get",
         "description": "Gets the details of the authorization server specified by its identifier.",
         "x-ms-examples": {
-          "ApiManagementGetAuthorizationServers": {
-            "$ref": "./examples/ApiManagementGetAuthorizationServers.json"
+          "ApiManagementGetAuthorizationservers": {
+            "$ref": "./examples/ApiManagementGetAuthorizationservers.json"
           }
         },
         "parameters": [
@@ -134,8 +134,8 @@
         "operationId": "AuthorizationServer_CreateOrUpdate",
         "description": "Creates new authorization server or updates an existing authorization server.",
         "x-ms-examples": {
-          "ApiManagementPutAuthorizationServers": {
-            "$ref": "./examples/ApiManagementPutAuthorizationServers.json"
+          "ApiManagementPutAuthorizationservers": {
+            "$ref": "./examples/ApiManagementPutAuthorizationservers.json"
           }
         },
         "parameters": [
@@ -183,8 +183,8 @@
         "operationId": "AuthorizationServer_Update",
         "description": "Updates the details of the authorization server specified by its identifier.",
         "x-ms-examples": {
-          "ApiManagementPatchAuthorizationServers": {
-            "$ref": "./examples/ApiManagementPatchAuthorizationServers.json"
+          "ApiManagementPatchAuthorizationservers": {
+            "$ref": "./examples/ApiManagementPatchAuthorizationservers.json"
           }
         },
         "parameters": [
@@ -230,8 +230,8 @@
         "operationId": "AuthorizationServer_Delete",
         "description": "Deletes specific authorization server instance.",
         "x-ms-examples": {
-          "ApiManagementDeleteAuthorizationServers": {
-            "$ref": "./examples/ApiManagementDeleteAuthorizationServers.json"
+          "ApiManagementDeleteAuthorizationservers": {
+            "$ref": "./examples/ApiManagementDeleteAuthorizationservers.json"
           }
         },
         "parameters": [

@@ -124,7 +124,7 @@
                 "description": "The number of milliseconds."
               }
             ],
-            "modelAsString": true
+            "modelAsExtensible": true
           },
           "description": "The metric unit",
           "readOnly": true,
@@ -153,7 +153,7 @@
                 "description": "The sum."
               }
             ],
-            "modelAsString": true
+            "modelAsExtensible": true
           },
           "description": "The metric aggregation type",
           "readOnly": true,
@@ -277,7 +277,7 @@
                 "description": "A secondary storage account for the Media Services account."
               }
             ],
-            "modelAsString": true
+            "modelAsExtensible": true
           },
           "description": "The type of the storage account."
         }

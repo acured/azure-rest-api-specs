@@ -361,7 +361,7 @@
         ],
         "operationId": "Namespaces_ListAuthorizationRules",
         "x-ms-examples": {
-          "NameSpaceAuthorizationRuleListAll": { "$ref": "./examples/SBNameSpaceAuthorizationRuleListAll.json" }
+          "NameSpaceAutorizationRuleListAll": { "$ref": "./examples/SBNameSpaceAutorizationRuleListAll.json" }
         },
         "description": "Gets the authorization rules for a namespace.",
         "externalDocs": {
@@ -448,7 +448,7 @@
         ],
         "operationId": "Namespaces_DeleteAuthorizationRule",
         "x-ms-examples": {
-          "NameSpaceAuthorizationRuleDelete": { "$ref": "./examples/SBNameSpaceAuthorizationRuleDelete.json" }
+          "NameSpaceAutorizationRuleDelete": { "$ref": "./examples/SBNameSpaceAutorizationRuleDelete.json" }
         },
         "description": "Deletes a namespace authorization rule.",
         "externalDocs": {
@@ -486,7 +486,7 @@
         ],
         "operationId": "Namespaces_GetAuthorizationRule",
         "x-ms-examples": {
-          "NameSpaceAuthorizationRuleGet": { "$ref": "./examples/SBNameSpaceAuthorizationRuleGet.json" }
+          "NameSpaceAutorizationRuleGet": { "$ref": "./examples/SBNameSpaceAutorizationRuleGet.json" }
         },
         "description": "Gets an authorization rule for a namespace by rule name.",
         "externalDocs": {
@@ -566,7 +566,7 @@
         ],
         "operationId": "Namespaces_RegenerateKeys",
         "x-ms-examples": {
-          "NameSpaceAuthorizationRuleRegenerateKey": { "$ref": "./examples/SBNameSpaceAuthorizationRuleRegenerateKey.json" }
+          "NameSpaceAuthorizationRuleRegenrateKey": { "$ref": "./examples/SBNameSpaceAuthorizationRuleRegenrateKey.json" }
         },
         "description": "Regenerates the primary or secondary connection strings for the namespace.",
         "externalDocs": {
@@ -780,7 +780,7 @@
         ],
         "operationId": "Queues_ListAuthorizationRules",
         "x-ms-examples": {
-          "QueueAuthorizationRuleListAll": { "$ref": "./examples/SBQueueAuthorizationRuleListAll.json" }
+          "QueueAutorizationRuleListAll": { "$ref": "./examples/SBQueueAutorizationRuleListAll.json" }
         },
         "description": "Gets all authorization rules for a queue.",
         "externalDocs": {
@@ -870,7 +870,7 @@
         ],
         "operationId": "Queues_PostAuthorizationRule",
         "x-ms-examples": {
-          "QueueAuthorizationRuleGet": { "$ref": "./examples/SBQueueAuthorizationRuleGet.json" }
+          "QueueAutorizationRuleGet": { "$ref": "./examples/SBQueueAutorizationRuleGet.json" }
         },
         "description": "Gets an authorization rule for a queue by rule name.",
         "externalDocs": {
@@ -911,7 +911,7 @@
         ],
         "operationId": "Queues_DeleteAuthorizationRule",
         "x-ms-examples": {
-          "QueueAuthorizationRuleDelete": { "$ref": "./examples/SBQueueAuthorizationRuleDelete.json" }
+          "QueueAutorizationRuleDelete": { "$ref": "./examples/SBQueueAutorizationRuleDelete.json" }
         },
         "description": "Deletes a queue authorization rule.",
         "externalDocs": {
@@ -952,7 +952,7 @@
         ],
         "operationId": "Queues_GetAuthorizationRule",
         "x-ms-examples": {
-          "QueueAuthorizationRuleGet": { "$ref": "./examples/SBQueueAuthorizationRuleGet.json" }
+          "QueueAutorizationRuleGet": { "$ref": "./examples/SBQueueAutorizationRuleGet.json" }
         },
         "description": "Gets an authorization rule for a queue by rule name.",
         "externalDocs": {
@@ -1038,7 +1038,7 @@
         ],
         "operationId": "Queues_RegenerateKeys",
         "x-ms-examples": {
-          "QueueAuthorizationRuleRegenerateKey": { "$ref": "./examples/SBQueueAuthorizationRuleRegenerateKey.json" }
+          "QueueAuthorizationRuleRegenrateKey": { "$ref": "./examples/SBQueueAuthorizationRuleRegenrateKey.json" }
         },
         "description": "Regenerates the primary or secondary connection strings to the queue.",
         "externalDocs": {
@@ -1255,7 +1255,7 @@
         ],
         "operationId": "Topics_ListAuthorizationRules",
         "x-ms-examples": {
-          "TopicAuthorizationRuleListAll": { "$ref": "./examples/SBTopicAuthorizationRuleListAll.json" }
+          "TopicAutorizationRuleListAll": { "$ref": "./examples/SBTopicAutorizationRuleListAll.json" }
         },
         "description": "Gets authorization rules for a topic.",
         "externalDocs": {
@@ -1300,7 +1300,7 @@
         "x-ms-examples": {
           "TopicAuthorizationRuleCreate": { "$ref": "./examples/SBTopicAuthorizationRuleCreate.json" }
         },
-        "description": "Creates an authorization rule for the specified topic.",
+        "description": "Creates an authorizatio rule for the specified topic.",
         "externalDocs": {
           "url": "https://msdn.microsoft.com/en-us/library/azure/mt720678.aspx"
         },
@@ -1348,7 +1348,7 @@
         ],
         "operationId": "Topics_PostAuthorizationRule",
         "x-ms-examples": {
-          "TopicAuthorizationRuleGet": { "$ref": "./examples/SBTopicAuthorizationRuleGet.json" }
+          "TopicAutorizationRuleGet": { "$ref": "./examples/SBTopicAutorizationRuleGet.json" }
         },
         "description": "Returns the specified authorization rule.",
         "externalDocs": {
@@ -1389,7 +1389,7 @@
         ],
         "operationId": "Topics_GetAuthorizationRule",
         "x-ms-examples": {
-          "TopicAuthorizationRuleGet": { "$ref": "./examples/SBTopicAuthorizationRuleGet.json" }
+          "TopicAutorizationRuleGet": { "$ref": "./examples/SBTopicAutorizationRuleGet.json" }
         },
         "description": "Returns the specified authorization rule.",
         "externalDocs": {
@@ -1430,7 +1430,7 @@
         ],
         "operationId": "Topics_DeleteAuthorizationRule",
         "x-ms-examples": {
-          "TopicAuthorizationRuleDelete": { "$ref": "./examples/SBTopicAuthorizationRuleDelete.json" }
+          "TopicAutorizationRuleDelete": { "$ref": "./examples/SBTopicAutorizationRuleDelete.json" }
         },
         "description": "Deletes a topic authorization rule.",
         "externalDocs": {
@@ -1516,7 +1516,7 @@
         ],
         "operationId": "Topics_RegenerateKeys",
         "x-ms-examples": {
-          "TopicAuthorizationRuleRegenerateKey": { "$ref": "./examples/SBTopicAuthorizationRuleRegenerateKey.json" }
+          "TopicAuthorizationRuleRegenrateKey": { "$ref": "./examples/SBTopicAuthorizationRuleRegenrateKey.json" }
         },
         "description": "Regenerates primary or secondary connection strings for the topic.",
         "externalDocs": {
@@ -2410,7 +2410,7 @@
           "description": "The exact time the message was updated."
         }
       },
-      "description": "The Topic Properties definition."
+      "description": "The Tpoic Properties definition."
     },
     "SubscriptionCreateOrUpdateParameters": {
       "properties": {
@@ -2594,7 +2594,7 @@
       "properties": {
         "name": {
           "type": "string",
-          "description": "The Name to check the namespace name availability and The namespace name can contain only letters, numbers, and hyphens. The namespace must start with a letter, and it must end with a letter or number."
+          "description": "The Name to check the namespce name availability and The namespace name can contain only letters, numbers, and hyphens. The namespace must start with a letter, and it must end with a letter or number."
         }
       },
       "required": [
@@ -2713,7 +2713,7 @@
       "minLength": 1,
       "maxLength": 50,
       "x-ms-parameter-location": "method",
-      "description": "The authorization rule name."
+      "description": "The authorizationrule name."
     },
     "queueNameParameter": {
       "name": "queueName",

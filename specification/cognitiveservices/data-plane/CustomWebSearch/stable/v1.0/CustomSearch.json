@@ -22,15 +22,6 @@
 			]
 		}
 	},
-  "x-ms-parameterized-host": {
-    "hostTemplate": "{Endpoint}",
-    "useSchemePrefix": false,
-    "parameters": [
-      {
-        "$ref": "../../../Common/Parameters.json#/parameters/GlobalEndpoint"
-      }
-    ]
-  },
 	"host": "api.cognitive.microsoft.com",
 	"schemes": [
 		"https"

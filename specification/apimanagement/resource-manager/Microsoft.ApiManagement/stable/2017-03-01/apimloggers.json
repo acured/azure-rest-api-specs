@@ -516,7 +516,7 @@
           "description": "Sampling settings entity contract properties."
         }
       },
-      "description": "Sampling settings contract."
+      "description": "Sampling settigs contract."
     },
     "LoggerSamplingProperties": {
       "properties": {

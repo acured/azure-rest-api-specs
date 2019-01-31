@@ -1001,7 +1001,7 @@
           "readOnly": true,
           "type": "integer",
           "format": "int32",
-          "description": "The number of failures that occurred in this stage."
+          "description": "The number of failures that occured in this stage."
         },
         "maxVertexDataRead": {
           "readOnly": true,
@@ -1250,13 +1250,13 @@
           "readOnly": true,
           "type": "integer",
           "format": "int32",
-          "description": "The line number the error occurred on."
+          "description": "The line number the error occured on."
         },
         "columnNumber": {
           "readOnly": true,
           "type": "integer",
           "format": "int32",
-          "description": "The column where the error occurred."
+          "description": "The column where the error occured."
         },
         "start": {
           "readOnly": true,
@@ -1466,7 +1466,7 @@
           "readOnly": true,
           "type": "integer",
           "format": "int32",
-          "description": "The specific line number in the job where the error occurred."
+          "description": "The specific line number in the job where the error occured."
         },
         "startOffset": {
           "readOnly": true,

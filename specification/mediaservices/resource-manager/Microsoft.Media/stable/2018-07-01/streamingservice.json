@@ -1323,8 +1323,7 @@
           "description": "The encoding type for Live Event.  This value is specified at creation time and cannot be updated.",
           "enum": [
             "None",
-            "Basic",
-            "Standard"
+            "Basic"
           ],
           "x-ms-enum": {
             "name": "LiveEventEncodingType",

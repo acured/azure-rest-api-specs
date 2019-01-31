@@ -201,7 +201,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully deleted certificate."
+            "description": "Succesfully deleted certificate."
           },
           "204": {
             "description": "Certificate does not exist."
@@ -324,7 +324,7 @@
             },
             "expirationDate": {
               "format": "date-time",
-              "description": "Certificate expiration date.",
+              "description": "Certificate expriration date.",
               "type": "string",
               "readOnly": true
             },
@@ -486,7 +486,7 @@
             },
             "expirationDate": {
               "format": "date-time",
-              "description": "Certificate expiration date.",
+              "description": "Certificate expriration date.",
               "type": "string",
               "readOnly": true
             },

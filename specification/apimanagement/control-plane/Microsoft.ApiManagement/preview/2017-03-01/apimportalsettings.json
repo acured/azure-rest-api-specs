@@ -50,8 +50,8 @@
         "operationId": "SignInSettings_Get",
         "description": "Get Sign-In settings.",
         "x-ms-examples": {
-          "ApiManagementGetPortalSettingsSignIn": {
-            "$ref": "./examples/ApiManagementGetPortalSettingsSignIn.json"
+          "ApiManagementGetPortalSettingSignIn": {
+            "$ref": "./examples/ApiManagementGetPortalSettingSignIn.json"
           }
         },
         "parameters": [
@@ -242,8 +242,8 @@
         "operationId": "SignUpSettings_CreateOrUpdate",
         "description": "Create or Update Sign-Up settings.",
         "x-ms-examples": {
-          "ApiManagementPutPortalSettingsSignUp": {
-            "$ref": "./examples/ApiManagementPutPortalSettingsSignUp.json"
+          "ApiManagementPutPortalsettingsSignUp": {
+            "$ref": "./examples/ApiManagementPutPortalsettingsSignUp.json"
           }
         },
         "parameters": [

@@ -9,9 +9,11 @@
     "parameters": {
       "location": "West US",
       "properties": {
-        "rights": [
-          "Listen"
-        ]
+        "right": {
+          [
+            "Listen"
+          ]
+        }
       }
     }
   },

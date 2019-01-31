@@ -42,7 +42,7 @@
           "ConnectionType"
         ],
         "operationId": "ConnectionType_Delete",
-        "description": "Delete the connection type.",
+        "description": "Delete the connectiontype.",
         "externalDocs": {
           "url": "http://aka.ms/azureautomationsdk/connectiontypeoperations"
         },
@@ -63,7 +63,7 @@
             "in": "path",
             "required": true,
             "type": "string",
-            "description": "The name of connection type."
+            "description": "The name of connectiontype."
           },
           {
             "$ref": "../../common/v1/definitions.json#/parameters/SubscriptionIdParameter"
@@ -92,7 +92,7 @@
           "ConnectionType"
         ],
         "operationId": "ConnectionType_Get",
-        "description": "Retrieve the connection type identified by connection type name.",
+        "description": "Retrieve the connectiontype identified by connectiontype name.",
         "externalDocs": {
           "url": "http://aka.ms/azureautomationsdk/connectiontypeoperations"
         },
@@ -113,7 +113,7 @@
             "in": "path",
             "required": true,
             "type": "string",
-            "description": "The name of connection type."
+            "description": "The name of connectiontype."
           },
           {
             "$ref": "../../common/v1/definitions.json#/parameters/SubscriptionIdParameter"
@@ -142,7 +142,7 @@
           "ConnectionType"
         ],
         "operationId": "ConnectionType_CreateOrUpdate",
-        "description": "Create a connection type.",
+        "description": "Create a connectiontype.",
         "externalDocs": {
           "url": "http://aka.ms/azureautomationsdk/connectiontypeoperations"
         },
@@ -163,7 +163,7 @@
             "in": "path",
             "required": true,
             "type": "string",
-            "description": "The parameters supplied to the create or update connection type operation."
+            "description": "The parameters supplied to the create or update connectiontype operation."
           },
           {
             "name": "parameters",
@@ -172,7 +172,7 @@
             "schema": {
               "$ref": "#/definitions/ConnectionTypeCreateOrUpdateParameters"
             },
-            "description": "The parameters supplied to the create or update connection type operation."
+            "description": "The parameters supplied to the create or update connectiontype operation."
           },
           {
             "$ref": "../../common/v1/definitions.json#/parameters/SubscriptionIdParameter"
@@ -209,7 +209,7 @@
           "ConnectionType"
         ],
         "operationId": "ConnectionType_ListByAutomationAccount",
-        "description": "Retrieve a list of connection types.",
+        "description": "Retrieve a list of connectiontypes.",
         "externalDocs": {
           "url": "http://aka.ms/azureautomationsdk/connectiontypeoperations"
         },

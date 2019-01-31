@@ -185,7 +185,7 @@
     },
     "definitions": {
         "CustomerSubscription": {
-            "description": "Customer subscription.",
+            "description": "Customer subcription.",
             "type": "object",
             "properties": {
                 "properties": {

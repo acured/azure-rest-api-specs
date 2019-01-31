@@ -352,7 +352,7 @@
             }
         },
         "RegistrationParameterProperties": {
-            "description": "Properties of the Azure Stack registration resource",
+            "description": "Properties of the Azure Stack regstration resource",
             "type": "object",
             "properties": {
                 "registrationToken": {

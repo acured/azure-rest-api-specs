@@ -1750,7 +1750,7 @@
           "exclusiveMaximum": false,
           "minimum": 8,
           "exclusiveMinimum": false,
-          "description": "Maximum request body size for WAF."
+          "description": "Maxium request body size for WAF."
         }
       },
       "required": [

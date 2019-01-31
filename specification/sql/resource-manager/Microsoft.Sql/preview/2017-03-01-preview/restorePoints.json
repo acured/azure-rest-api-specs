@@ -222,7 +222,7 @@
   },
   "definitions": {
     "RestorePointListResult": {
-      "description": "A list of long term retention backups.",
+      "description": "A list of long term retention bacukps.",
       "type": "object",
       "properties": {
         "value": {

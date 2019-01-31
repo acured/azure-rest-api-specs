@@ -22,7 +22,7 @@
 						"name": "organizations",
 						"targetName": "organizations"
 					}],
-					"categories": ["organization"],
+					"categories": ["Organization"],
 					"defaultLanguageCode": "en",
 					"minimumPrecision": null
 				},

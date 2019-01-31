@@ -459,7 +459,7 @@
           "type": "string"
         },
         "maxPartitionResolutionRetries": {
-          "description": "Maximum number of retries while attempting resolve the partition.",
+          "description": "Maximum number of retries while attempting resolve the parition.",
           "format": "int32",
           "type": "integer"
         },

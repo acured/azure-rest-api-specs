@@ -1297,7 +1297,7 @@
         },
         "type": {
           "type": "string",
-          "description": "The type of the resource. Ex- Microsoft.Network/trafficManagerProfiles."
+          "description": "The type of the resource. Ex- Microsoft.Network/trafficmanagerProfiles."
         }
       },
       "x-ms-azure-resource": true

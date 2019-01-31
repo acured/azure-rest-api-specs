@@ -66,7 +66,6 @@ async function getLinterResult(swaggerPath) {
 
     let resultString = stdout + stderr;
     if (resultString.indexOf('{') !== -1) {
-        resultString = resultString.replace(/Processing batch task - {.*} \.\n/g, "");
         resultString = "[" + resultString.substring(resultString.indexOf('{')).trim().replace(/\}\n\{/g, "},\n{") + "]";
         //console.log('>>>>>> Trimmed Result...');
         //console.log(resultString);
@@ -79,7 +78,6 @@ async function getLinterResult(swaggerPath) {
             console.log(`An error occurred while executing JSON.parse() on the linter output for ${swaggerPath}:`);
             console.dir(resultString);
             console.dir(e, { depth: null, colors: true });
-            process.exit(1)
         }
     }
     return [];
@@ -89,7 +87,7 @@ async function getLinterResult(swaggerPath) {
 async function runTools(swagger, beforeOrAfter) {
     console.log(`Processing "${swagger}":`);
     const linterErrors = await getLinterResult(swagger);
-    console.log(linterErrors);
+    console.log(`Linter produced ${linterErrors.length} results`);
     await updateResult(swagger, linterErrors, beforeOrAfter);
 };
 

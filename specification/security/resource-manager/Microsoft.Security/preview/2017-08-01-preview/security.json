@@ -413,7 +413,7 @@
                     }
                 },
                 "tags": ["Workspace Settings"],
-                "description": "Settings about where we should store your security data and logs. If the result is empty, it means that no custom-workspace configuration was set",
+                "description": "Settings about where we should store your security data and logs",
                 "operationId": "WorkspaceSettings_List",
                 "parameters": [{
                     "$ref": "#/parameters/ApiVersion"
@@ -447,7 +447,7 @@
                     }
                 },
                 "tags": ["Workspace Settings"],
-                "description": "Settings about where we should store your security data and logs. If the result is empty, it means that no custom-workspace configuration was set",
+                "description": "Settings about where we should store your security data and logs",
                 "operationId": "WorkspaceSettings_Get",
                 "parameters": [{
                     "$ref": "#/parameters/ApiVersion"
@@ -1492,7 +1492,10 @@
             "properties": {},
             "allOf": [
                 {
-                    "$ref": "#/definitions/SettingResource"
+                    "$ref": "#/definitions/Resource"
+                },
+                {
+                    "$ref": "#/definitions/SettingKind"
                 }
             ]
         },
@@ -1513,16 +1516,15 @@
                 }
             ]
         },
-        "SettingResource": {
+        "SettingKind": {
             "type": "object",
             "description": "The kind of the security setting",
             "properties": {
                 "kind": {
                     "type": "string",
-                    "description": "the kind of the settings string (DataExportSetting)",
+                    "description": "the kind of the settings string",
                     "enum": [
-                        "DataExportSetting",
-                        "AlertSuppressionSetting"
+                        "DataExportSetting"
                     ],
                     "x-ms-enum": {
                         "name": "SettingKind",
@@ -1530,23 +1532,11 @@
                         "values": [
                             {
                                 "value": "DataExportSetting"
-                            },
-                            {
-                                "value": "AlertSuppressionSetting"
                             }
                         ]
                     }
-
                 }
-            },
-            "required": [
-                "kind"
-            ],
-            "allOf": [
-                {
-                    "$ref": "#/definitions/Resource"
-                }
-            ]
+            }
         },
         "DataExportSettingProperties": {
             "type": "object",
@@ -1793,7 +1783,7 @@
             "in": "path",
             "required": true,
             "type": "string",
-            "description": "Name of setting: (MCAS/WDATP)",
+            "description": "Name of setting",
             "enum": [
                 "MCAS",
                 "WDATP"

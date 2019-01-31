@@ -21,9 +21,9 @@
             "resourceState": "Active",
             "hostName": "www.someDomain.net",
             "customHttpsProvisioningState": "Enabling",
-            "customHttpsProvisioningSubstate": "PendingDomainControlValidationREquestApproval",
+            "customHttpsProvisioningSubstate": "PendingDomainControlValidationRequestApproval",
             "validationData": null
-        }
+        }        
       }
     }
   }

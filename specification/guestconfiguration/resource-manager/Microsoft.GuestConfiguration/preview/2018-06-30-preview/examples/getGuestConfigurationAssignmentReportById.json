@@ -72,9 +72,7 @@
                       }
                   }],
                   "operationType": "Consistency"
-              },
-              "startTime": "2018-08-29T22:13:53Z",
-              "endTime": "2018-08-29T22:14:13Z"
+              }
           }
       }
       }

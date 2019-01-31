@@ -112,7 +112,7 @@
         },
         "x-ms-examples": {
           "GetRateCard": {
-            "$ref": "./examples/GetRateCard.json"
+            "$ref": "./examples/GetRatecard.json"
           }
         },
         "parameters": [

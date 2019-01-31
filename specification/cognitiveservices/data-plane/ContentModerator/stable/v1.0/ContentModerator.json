@@ -2789,7 +2789,7 @@
           "type": "boolean"
         },
         "RacyClassificationScore": {
-          "description": "The racy classification score.",
+          "description": "The racy classication score.",
           "type": "number"
         },
         "IsImageRacyClassified": {

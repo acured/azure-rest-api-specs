@@ -231,7 +231,7 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content in case of Update Successful."
+            "description": "No Content in case of Update Successfull."
           },
           "default": {
             "description": "Error response describing why the operation failed.",

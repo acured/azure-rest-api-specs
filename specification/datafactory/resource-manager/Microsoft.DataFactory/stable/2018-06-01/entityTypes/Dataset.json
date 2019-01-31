@@ -23,10 +23,6 @@
           "type": "object",
           "description": "Columns that define the structure of the dataset. Type: array (or Expression with resultType array), itemType: DatasetDataElement."
         },
-        "schema": {
-          "type": "object",
-          "description": "Columns that define the physical type schema of the dataset. Type: array (or Expression with resultType array), itemType: DatasetSchemaDataElement."
-        },
         "linkedServiceName": {
           "description": "Linked service reference.",
           "$ref": "../datafactory.json#/definitions/LinkedServiceReference"
@@ -73,23 +69,6 @@
           "type": "object",
           "description": "Type of the column. Type: string (or Expression with resultType string)."
         }
-      }
-    },
-    "DatasetSchemaDataElement": {
-      "description": "Columns that define the physical type schema of the dataset.",
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "object",
-          "description": "Name of the schema column. Type: string (or Expression with resultType string)."
-        },
-        "type": {
-          "type": "object",
-          "description": "Type of the schema column. Type: string (or Expression with resultType string)."
-        }
-      },
-      "additionalProperties": {
-        "type": "object"
       }
     },
     "DatasetStorageFormat": {
@@ -962,7 +941,7 @@
         "path"
       ]
     },
-    "SqlServerTableDataset": {
+	"SqlServerTableDataset": {
       "x-ms-discriminator-value": "SqlServerTable",
       "description": "The on-premises SQL Server dataset.",
       "type": "object",
@@ -1111,15 +1090,6 @@
         }
       }
     },
-    "GenericDatasetTypeProperties": {
-      "description": "Properties specific to this dataset type.",
-      "properties": {
-        "tableName": {
-          "type": "object",
-          "description": "The table name. Type: string (or Expression with resultType string)."
-        }
-      }
-    },
     "AmazonMWSObjectDataset" : {
       "x-ms-discriminator-value": "AmazonMWSObject", 
       "description": "Amazon Marketplace Web Service dataset.", 
@@ -1129,12 +1099,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "AzurePostgreSqlTableDataset" : {
@@ -1146,29 +1111,19 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "ConcurObjectDataset" : {
       "x-ms-discriminator-value": "ConcurObject", 
-      "description": "Concur Service dataset.", 
+      "description": "Concur Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "CouchbaseTableDataset" : {
@@ -1180,12 +1135,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "DrillTableDataset" : {
@@ -1197,12 +1147,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "EloquaObjectDataset" : {
@@ -1214,12 +1159,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "GoogleBigQueryObjectDataset" : {
@@ -1231,12 +1171,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "GreenplumTableDataset" : {
@@ -1248,12 +1183,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "HBaseObjectDataset" : {
@@ -1265,12 +1195,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "HiveObjectDataset" : {
@@ -1282,29 +1207,19 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "HubspotObjectDataset" : {
       "x-ms-discriminator-value": "HubspotObject", 
-      "description": "Hubspot Service dataset.", 
+      "description": "Hubspot Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "ImpalaObjectDataset" : {
@@ -1316,29 +1231,19 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "JiraObjectDataset" : {
       "x-ms-discriminator-value": "JiraObject", 
-      "description": "Jira Service dataset.", 
+      "description": "Jira Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "MagentoObjectDataset" : {
@@ -1350,12 +1255,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "MariaDBTableDataset" : {
@@ -1367,12 +1267,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "MarketoObjectDataset" : {
@@ -1384,29 +1279,19 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "PaypalObjectDataset" : {
       "x-ms-discriminator-value": "PaypalObject", 
-      "description": "Paypal Service dataset.", 
+      "description": "Paypal Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "PhoenixObjectDataset" : {
@@ -1418,12 +1303,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "PrestoObjectDataset" : {
@@ -1435,12 +1315,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "QuickBooksObjectDataset" : {
@@ -1452,12 +1327,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "ServiceNowObjectDataset" : {
@@ -1469,29 +1339,19 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "ShopifyObjectDataset" : {
       "x-ms-discriminator-value": "ShopifyObject", 
-      "description": "Shopify Service dataset.", 
+      "description": "Shopify Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "SparkObjectDataset" : {
@@ -1503,46 +1363,31 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "SquareObjectDataset" : {
       "x-ms-discriminator-value": "SquareObject", 
-      "description": "Square Service dataset.", 
+      "description": "Square Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "XeroObjectDataset" : {
       "x-ms-discriminator-value": "XeroObject", 
-      "description": "Xero Service dataset.", 
+      "description": "Xero Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "ZohoObjectDataset" : {
@@ -1554,12 +1399,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "NetezzaTableDataset" : {
@@ -1571,12 +1411,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "VerticaTableDataset" : {
@@ -1588,12 +1423,7 @@
             "$ref": "#/definitions/Dataset" 
         } 
       ], 
-      "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
+      "properties": { 
       }
     },
     "SalesforceMarketingCloudObjectDataset": {
@@ -1606,11 +1436,6 @@
         }
       ],
       "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
       }
     },
     "ResponsysObjectDataset": {
@@ -1623,11 +1448,6 @@
         }
       ],
       "properties": {
-        "typeProperties": {
-          "description": "Properties specific to this dataset type.",
-          "x-ms-client-flatten": true,
-          "$ref": "#/definitions/GenericDatasetTypeProperties"
-        }
       }
     }
   }
