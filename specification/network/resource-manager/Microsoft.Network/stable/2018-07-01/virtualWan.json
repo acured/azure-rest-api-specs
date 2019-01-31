@@ -328,7 +328,7 @@
         "x-ms-examples": {
           "VpnSiteGet": { "$ref": "./examples/VpnSiteGet.json" }
         },
-        "description": "Retrieves the details of a VPN site.",
+        "description": "Retrieves the details of a VPNsite.",
         "parameters": [
           {
             "$ref": "./network.json#/parameters/SubscriptionIdParameter"
@@ -2039,7 +2039,7 @@
     "ProvisioningState": {
       "type": "string",
       "readOnly": true,
-      "description": "The current provisioning state.",
+      "description": "The current provisisoning state.",
       "enum": [
         "Succeeded",
         "Updating",

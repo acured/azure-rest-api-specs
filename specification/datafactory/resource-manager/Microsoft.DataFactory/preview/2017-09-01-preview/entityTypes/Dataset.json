@@ -1106,7 +1106,7 @@
     },
     "ConcurObjectDataset" : {
       "x-ms-discriminator-value": "ConcurObject", 
-      "description": "Concur Service dataset.", 
+      "description": "Concur Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
@@ -1202,7 +1202,7 @@
     },
     "HubspotObjectDataset" : {
       "x-ms-discriminator-value": "HubspotObject", 
-      "description": "Hubspot Service dataset.", 
+      "description": "Hubspot Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
@@ -1226,7 +1226,7 @@
     },
     "JiraObjectDataset" : {
       "x-ms-discriminator-value": "JiraObject", 
-      "description": "Jira Service dataset.", 
+      "description": "Jira Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
@@ -1274,7 +1274,7 @@
     },
     "PaypalObjectDataset" : {
       "x-ms-discriminator-value": "PaypalObject", 
-      "description": "Paypal Service dataset.", 
+      "description": "Paypal Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
@@ -1334,7 +1334,7 @@
     },
     "ShopifyObjectDataset" : {
       "x-ms-discriminator-value": "ShopifyObject", 
-      "description": "Shopify Service dataset.", 
+      "description": "Shopify Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
@@ -1358,7 +1358,7 @@
     },
     "SquareObjectDataset" : {
       "x-ms-discriminator-value": "SquareObject", 
-      "description": "Square Service dataset.", 
+      "description": "Square Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 
@@ -1370,7 +1370,7 @@
     },
     "XeroObjectDataset" : {
       "x-ms-discriminator-value": "XeroObject", 
-      "description": "Xero Service dataset.", 
+      "description": "Xero Serivce dataset.", 
       "type": "object", 
       "allOf": [ 
         { 

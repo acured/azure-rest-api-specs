@@ -1885,7 +1885,7 @@
       }
     },
     "AppServiceEnvironmentPatchResource": {
-      "description": "ARM resource for a app service environment.",
+      "description": "ARM resource for a app service enviroment.",
       "type": "object",
       "allOf": [
         {

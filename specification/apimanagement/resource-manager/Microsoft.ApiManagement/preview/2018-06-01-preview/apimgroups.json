@@ -231,7 +231,7 @@
         ],
         "responses": {
           "201": {
-            "description": "Group was created successfully.",
+            "description": "Group was created succesfully.",
             "schema": {
               "$ref": "#/definitions/GroupContract"
             }

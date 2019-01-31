@@ -199,7 +199,7 @@
           "Subscriptions"
         ],
         "operationId": "Subscription_Update",
-        "description": "Updates the details of a subscription specified by its identifier.",
+        "description": "Updates the details of a subscription specificied by its identifier.",
         "x-ms-examples": {
           "ApiManagementPatchSubscriptions": {
             "$ref": "./examples/ApiManagementPatchSubscriptions.json"
@@ -300,8 +300,8 @@
         "operationId": "Subscription_RegeneratePrimaryKey",
         "description": "Regenerates primary key of existing subscription of the API Management service instance.",
         "x-ms-examples": {
-          "ApiManagementPostSubscriptionsRegeneratePrimaryKey": {
-            "$ref": "./examples/ApiManagementPostSubscriptionsRegeneratePrimaryKey.json"
+          "ApiManagementPostSubscriptionsRegenerateprimarykey": {
+            "$ref": "./examples/ApiManagementPostSubscriptionsRegenerateprimarykey.json"
           }
         },
         "parameters": [
@@ -333,8 +333,8 @@
         "operationId": "Subscription_RegenerateSecondaryKey",
         "description": "Regenerates secondary key of existing subscription of the API Management service instance.",
         "x-ms-examples": {
-          "ApiManagementPostSubscriptionsRegenerateSecondaryKey": {
-            "$ref": "./examples/ApiManagementPostSubscriptionsRegenerateSecondaryKey.json"
+          "ApiManagementPostSubscriptionsRegeneratesecondarykey": {
+            "$ref": "./examples/ApiManagementPostSubscriptionsRegeneratesecondarykey.json"
           }
         },
         "parameters": [
@@ -486,7 +486,7 @@
         },
         "productId": {
           "type": "string",
-          "description": "Product (product id path) for which subscription is being created in form /products/{productId}"
+          "description": "Product (product id path) for which subscription is being created in form /products/{productid}"
         },
         "name": {
           "type": "string",

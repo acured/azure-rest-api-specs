@@ -662,7 +662,7 @@
         },
         "consentRequired": {
           "type": "boolean",
-          "description": "Ask user for consent."
+          "description": "Ask user for concent."
         }
       },
       "description": "Terms of service contract properties."

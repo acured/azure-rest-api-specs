@@ -242,7 +242,7 @@
         },
         "outputs": {
           "type": "object",
-          "description": "Gets or sets key/value pairs that represent deployment output."
+          "description": "Gets or sets key/value pairs that represent deploymentoutput."
         },
         "providers": {
           "type": "array",
@@ -344,7 +344,7 @@
       "required": [
         "uri"
       ],
-      "description": "Entity representing the reference to the deployment parameters."
+      "description": "Entity representing the reference to the deployment paramaters."
     },
     "Provider": {
       "properties": {

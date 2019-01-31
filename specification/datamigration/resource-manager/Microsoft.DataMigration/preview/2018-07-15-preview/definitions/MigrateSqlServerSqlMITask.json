@@ -139,11 +139,11 @@
           },
           "readOnly": true
         },
-        "orphanedUsersInfo": {
-          "type": "array",
-          "description": "List of orphaned users.",
-          "items": {
-            "$ref": "./Common.json#/definitions/OrphanedUserInfo"
+        "orphanedUsers": {
+          "type": "string",
+          "description": "Map of users to database name of orphaned users.",
+          "additionalProperties": {
+            "type": "string"
           },
           "readOnly": true
         },

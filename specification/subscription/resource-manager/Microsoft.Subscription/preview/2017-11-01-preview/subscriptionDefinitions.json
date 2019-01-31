@@ -260,7 +260,7 @@
           "readOnly": true
         },
         "properties": {
-          "description": "the subscription definition properties",
+          "description": "the subscription definiton properties",
           "x-ms-client-flatten": true,
           "$ref": "#/definitions/SubscriptionDefinitionProperties"
         }

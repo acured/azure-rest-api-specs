@@ -84,7 +84,7 @@
                 "description": "The Asset is encrypted with Media Services client-side encryption."
               }
             ],
-            "modelAsString": true
+            "modelAsExtensible": true
           },
           "description": "The Asset encryption format. One of None or MediaStorageEncryption.",
           "readOnly": true,
@@ -264,6 +264,14 @@
         }
       },
       "type": "object",
+      "required": [
+        "startTimestamp",
+        "endTimestamp",
+        "presentationWindowDuration",
+        "liveBackoffDuration",
+        "timescale",
+        "forceEndTimestamp"
+      ],
       "description": "The presentation time range, this is asset related and not recommended for Account Filter."
     },
     "FilterTrackPropertyCondition": {
@@ -306,7 +314,7 @@
                 "description": "The bitrate."
               }
             ],
-            "modelAsString": true
+            "modelAsExtensible": true
           },
           "description": "The track property type."
         },
@@ -332,7 +340,7 @@
                 "description": "The not equal operation."
               }
             ],
-            "modelAsString": true
+            "modelAsExtensible": true
           },
           "description": "The track property condition operation."
         }
@@ -490,7 +498,7 @@
                 "description": "The SAS URL will allow read, write and delete access to the container."
               }
             ],
-            "modelAsString": true
+            "modelAsExtensible": true
           }
         },
         "expiryTime": {

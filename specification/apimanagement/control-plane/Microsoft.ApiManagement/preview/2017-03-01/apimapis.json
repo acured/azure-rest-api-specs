@@ -77,7 +77,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Paged Result response of Apis.",
+            "description": "Paged Result reponse of Apis.",
             "schema": {
               "$ref": "#/definitions/ApiCollection"
             }

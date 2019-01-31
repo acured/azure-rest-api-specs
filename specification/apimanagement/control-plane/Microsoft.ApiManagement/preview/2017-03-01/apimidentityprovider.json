@@ -50,8 +50,8 @@
         "operationId": "IdentityProvider_List",
         "description": "Lists a collection of Identity Provider configured in the specified service instance.",
         "x-ms-examples": {
-          "ApiManagementListIdentityProviders": {
-            "$ref": "./examples/ApiManagementListIdentityProviders.json"
+          "ApiManagementListIdentityproviders": {
+            "$ref": "./examples/ApiManagementListIdentityproviders.json"
           }
         },
         "externalDocs": {
@@ -89,8 +89,8 @@
         "operationId": "IdentityProvider_Get",
         "description": "Gets the configuration details of the identity Provider configured in specified service instance.",
         "x-ms-examples": {
-          "ApiManagementGetIdentityProviders": {
-            "$ref": "./examples/ApiManagementGetIdentityProviders.json"
+          "ApiManagementGetIdentityproviders": {
+            "$ref": "./examples/ApiManagementGetIdentityproviders.json"
           }
         },
         "parameters": [
@@ -129,8 +129,8 @@
         "operationId": "IdentityProvider_CreateOrUpdate",
         "description": "Creates or Updates the IdentityProvider configuration.",
         "x-ms-examples": {
-          "ApiManagementPutIdentityProviders": {
-            "$ref": "./examples/ApiManagementPutIdentityProviders.json"
+          "ApiManagementPutIdentityproviders": {
+            "$ref": "./examples/ApiManagementPutIdentityproviders.json"
           }
         },
         "parameters": [
@@ -178,8 +178,8 @@
         "operationId": "IdentityProvider_Update",
         "description": "Updates an existing IdentityProvider configuration.",
         "x-ms-examples": {
-          "ApiManagementPatchIdentityProviders": {
-            "$ref": "./examples/ApiManagementPatchIdentityProviders.json"
+          "ApiManagementPatchIdentityproviders": {
+            "$ref": "./examples/ApiManagementPatchIdentityproviders.json"
           }
         },
         "parameters": [
@@ -225,8 +225,8 @@
         "operationId": "IdentityProvider_Delete",
         "description": "Deletes the specified identity provider configuration.",
         "x-ms-examples": {
-          "ApiManagementDeleteIdentityProviders": {
-            "$ref": "./examples/ApiManagementDeleteIdentityProviders.json"
+          "ApiManagementDeleteIdentityproviders": {
+            "$ref": "./examples/ApiManagementDeleteIdentityproviders.json"
           }
         },
         "parameters": [

@@ -4,10 +4,10 @@
 
 This is the AutoRest configuration file for MonitorClient.
 
+
+
 ---
-
 ## Getting Started
-
 To build the SDK for MonitorClient, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,75 +15,48 @@ To build the SDK for MonitorClient, simply [Install AutoRest](https://aka.ms/aut
 To see additional help and options, run:
 
 > `autorest --help`
-
 ---
 
 ## Configuration
 
-### Basic Information
 
+
+### Basic Information
 These are the global settings for the MonitorClient API.
 
 ``` yaml
 title: MonitorClient
 description: Monitor Management Client
 openapi-type: arm
-tag: package-2018-11-preview
+
+tag: package-2018-09
+
 ```
-
-### Tag: package-2018-11-preview
-
-These settings apply only when `--tag=package-2018-11-preview` is specified on the command line.
-
-```yaml $(tag) == 'package-2018-11-preview'
-input-file:
-- Microsoft.Insights/stable/2015-04-01/autoscale_API.json
-- Microsoft.Insights/stable/2015-04-01/operations_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRulesIncidents_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRules_API.json
-- Microsoft.Insights/stable/2016-03-01/logProfiles_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
-- Microsoft.Insights/stable/2018-09-01/actionGroups_API.json
-- Microsoft.Insights/stable/2017-04-01/activityLogAlerts_API.json
-- Microsoft.Insights/stable/2015-04-01/activityLogs_API.json
-- Microsoft.Insights/stable/2015-04-01/eventCategories_API.json
-- Microsoft.Insights/stable/2015-04-01/tenantActivityLogs_API.json
-- Microsoft.Insights/stable/2018-01-01/metricDefinitions_API.json
-- Microsoft.Insights/stable/2018-01-01/metrics_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/baseline_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/calculateBaseline_API.json
-- Microsoft.Insights/stable/2018-03-01/metricAlert_API.json
-- Microsoft.Insights/stable/2018-04-16/scheduledQueryRule_API.json
-- Microsoft.Insights/preview/2017-12-01-preview/metricNamespaces_API.json
-- Microsoft.Insights/preview/2018-11-27-preview/vmInsightsOnboarding_API.json
-```
-
 ### Tag: package-2018-09
 
 These settings apply only when `--tag=package-2018-09` is specified on the command line.
 
 ``` yaml $(tag) == 'package-2018-09'
 input-file:
-- Microsoft.Insights/stable/2015-04-01/autoscale_API.json
-- Microsoft.Insights/stable/2015-04-01/operations_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRulesIncidents_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRules_API.json
-- Microsoft.Insights/stable/2016-03-01/logProfiles_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
-- Microsoft.Insights/stable/2018-09-01/actionGroups_API.json
-- Microsoft.Insights/stable/2017-04-01/activityLogAlerts_API.json
-- Microsoft.Insights/stable/2015-04-01/activityLogs_API.json
-- Microsoft.Insights/stable/2015-04-01/eventCategories_API.json
-- Microsoft.Insights/stable/2015-04-01/tenantActivityLogs_API.json
-- Microsoft.Insights/stable/2018-01-01/metricDefinitions_API.json
-- Microsoft.Insights/stable/2018-01-01/metrics_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/baseline_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/calculateBaseline_API.json
-- Microsoft.Insights/stable/2018-03-01/metricAlert_API.json
-- Microsoft.Insights/stable/2018-04-16/scheduledQueryRule_API.json
-- Microsoft.Insights/preview/2017-12-01-preview/metricNamespaces_API.json
+- microsoft.insights/stable/2015-04-01/autoscale_API.json
+- microsoft.insights/stable/2015-04-01/operations_API.json
+- microsoft.insights/stable/2016-03-01/alertRulesIncidents_API.json
+- microsoft.insights/stable/2016-03-01/alertRules_API.json
+- microsoft.insights/stable/2016-03-01/logProfiles_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
+- microsoft.insights/stable/2018-09-01/actionGroups_API.json
+- microsoft.insights/stable/2017-04-01/activityLogAlerts_API.json
+- microsoft.insights/stable/2015-04-01/activityLogs_API.json
+- microsoft.insights/stable/2015-04-01/eventCategories_API.json
+- microsoft.insights/stable/2015-04-01/tenantActivityLogs_API.json
+- microsoft.insights/stable/2018-01-01/metricDefinitions_API.json
+- microsoft.insights/stable/2018-01-01/metrics_API.json
+- microsoft.insights/preview/2017-11-01-preview/baseline_API.json
+- microsoft.insights/preview/2017-11-01-preview/calculateBaseline_API.json
+- microsoft.insights/stable/2018-03-01/metricAlert_API.json
+- microsoft.insights/stable/2018-04-16/scheduledQueryRule_API.json
+- microsoft.insights/preview/2017-12-01-preview/metricNamespaces_API.json
 ```
 
 ### Tag: package-2018-03
@@ -92,25 +65,26 @@ These settings apply only when `--tag=package-2018-03` is specified on the comma
 
 ``` yaml $(tag) == 'package-2018-03'
 input-file:
-- Microsoft.Insights/stable/2015-04-01/autoscale_API.json
-- Microsoft.Insights/stable/2015-04-01/operations_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRulesIncidents_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRules_API.json
-- Microsoft.Insights/stable/2016-03-01/logProfiles_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
-- Microsoft.Insights/stable/2018-09-01/actionGroups_API.json
-- Microsoft.Insights/stable/2017-04-01/activityLogAlerts_API.json
-- Microsoft.Insights/stable/2015-04-01/activityLogs_API.json
-- Microsoft.Insights/stable/2015-04-01/eventCategories_API.json
-- Microsoft.Insights/stable/2015-04-01/tenantActivityLogs_API.json
-- Microsoft.Insights/stable/2018-01-01/metricDefinitions_API.json
-- Microsoft.Insights/stable/2018-01-01/metrics_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/baseline_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/calculateBaseline_API.json
-- Microsoft.Insights/stable/2018-03-01/metricAlert_API.json
-- Microsoft.Insights/stable/2018-04-16/scheduledQueryRule_API.json
+- microsoft.insights/stable/2015-04-01/autoscale_API.json
+- microsoft.insights/stable/2015-04-01/operations_API.json
+- microsoft.insights/stable/2016-03-01/alertRulesIncidents_API.json
+- microsoft.insights/stable/2016-03-01/alertRules_API.json
+- microsoft.insights/stable/2016-03-01/logProfiles_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
+- microsoft.insights/stable/2018-09-01/actionGroups_API.json
+- microsoft.insights/stable/2017-04-01/activityLogAlerts_API.json
+- microsoft.insights/stable/2015-04-01/activityLogs_API.json
+- microsoft.insights/stable/2015-04-01/eventCategories_API.json
+- microsoft.insights/stable/2015-04-01/tenantActivityLogs_API.json
+- microsoft.insights/stable/2018-01-01/metricDefinitions_API.json
+- microsoft.insights/stable/2018-01-01/metrics_API.json
+- microsoft.insights/preview/2017-11-01-preview/baseline_API.json
+- microsoft.insights/preview/2017-11-01-preview/calculateBaseline_API.json
+- microsoft.insights/stable/2018-03-01/metricAlert_API.json
+- microsoft.insights/stable/2018-04-16/scheduledQueryRule_API.json
 ```
+
 
 ### Tag: package-2018-02-preview
 
@@ -118,23 +92,24 @@ These settings apply only when `--tag=package-2018-02-preview` is specified on t
 
 ``` yaml $(tag) == 'package-2018-02-preview'
 input-file:
-- Microsoft.Insights/stable/2015-04-01/autoscale_API.json
-- Microsoft.Insights/stable/2015-04-01/operations_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRulesIncidents_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRules_API.json
-- Microsoft.Insights/stable/2016-03-01/logProfiles_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
-- Microsoft.Insights/stable/2018-09-01/actionGroups_API.json
-- Microsoft.Insights/stable/2017-04-01/activityLogAlerts_API.json
-- Microsoft.Insights/stable/2015-04-01/activityLogs_API.json
-- Microsoft.Insights/stable/2015-04-01/eventCategories_API.json
-- Microsoft.Insights/stable/2015-04-01/tenantActivityLogs_API.json
-- Microsoft.Insights/stable/2018-01-01/metricDefinitions_API.json
-- Microsoft.Insights/stable/2018-01-01/metrics_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/baseline_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/calculateBaseline_API.json
+- microsoft.insights/stable/2015-04-01/autoscale_API.json
+- microsoft.insights/stable/2015-04-01/operations_API.json
+- microsoft.insights/stable/2016-03-01/alertRulesIncidents_API.json
+- microsoft.insights/stable/2016-03-01/alertRules_API.json
+- microsoft.insights/stable/2016-03-01/logProfiles_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
+- microsoft.insights/stable/2018-09-01/actionGroups_API.json
+- microsoft.insights/stable/2017-04-01/activityLogAlerts_API.json
+- microsoft.insights/stable/2015-04-01/activityLogs_API.json
+- microsoft.insights/stable/2015-04-01/eventCategories_API.json
+- microsoft.insights/stable/2015-04-01/tenantActivityLogs_API.json
+- microsoft.insights/stable/2018-01-01/metricDefinitions_API.json
+- microsoft.insights/stable/2018-01-01/metrics_API.json
+- microsoft.insights/preview/2017-11-01-preview/baseline_API.json
+- microsoft.insights/preview/2017-11-01-preview/calculateBaseline_API.json
 ```
+
 
 ### Tag: package-2017-12
 
@@ -142,22 +117,22 @@ These settings apply only when `--tag=package-2017-12` is specified on the comma
 
 ``` yaml $(tag) == 'package-2017-12'
 input-file:
-- Microsoft.Insights/stable/2015-04-01/autoscale_API.json
-- Microsoft.Insights/stable/2015-04-01/operations_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRulesIncidents_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRules_API.json
-- Microsoft.Insights/stable/2016-03-01/logProfiles_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
-- Microsoft.Insights/stable/2018-09-01/actionGroups_API.json
-- Microsoft.Insights/stable/2017-04-01/activityLogAlerts_API.json
-- Microsoft.Insights/stable/2015-04-01/activityLogs_API.json
-- Microsoft.Insights/stable/2015-04-01/eventCategories_API.json
-- Microsoft.Insights/stable/2015-04-01/tenantActivityLogs_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/metricDefinitions_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/metrics_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/baseline_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/calculateBaseline_API.json
+- microsoft.insights/stable/2015-04-01/autoscale_API.json
+- microsoft.insights/stable/2015-04-01/operations_API.json
+- microsoft.insights/stable/2016-03-01/alertRulesIncidents_API.json
+- microsoft.insights/stable/2016-03-01/alertRules_API.json
+- microsoft.insights/stable/2016-03-01/logProfiles_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
+- microsoft.insights/stable/2018-09-01/actionGroups_API.json
+- microsoft.insights/stable/2017-04-01/activityLogAlerts_API.json
+- microsoft.insights/stable/2015-04-01/activityLogs_API.json
+- microsoft.insights/stable/2015-04-01/eventCategories_API.json
+- microsoft.insights/stable/2015-04-01/tenantActivityLogs_API.json
+- microsoft.insights/preview/2017-05-01-preview/metricDefinitions_API.json
+- microsoft.insights/preview/2017-05-01-preview/metrics_API.json
+- microsoft.insights/preview/2017-11-01-preview/baseline_API.json
+- microsoft.insights/preview/2017-11-01-preview/calculateBaseline_API.json
 ```
 
 ### Tag: package-2017-09
@@ -166,22 +141,22 @@ These settings apply only when `--tag=package-2017-09` is specified on the comma
 
 ``` yaml $(tag) == 'package-2017-09'
 input-file:
-- Microsoft.Insights/stable/2015-04-01/autoscale_API.json
-- Microsoft.Insights/stable/2015-04-01/operations_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRulesIncidents_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRules_API.json
-- Microsoft.Insights/stable/2016-03-01/logProfiles_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
-- Microsoft.Insights/stable/2018-09-01/actionGroups_API.json
-- Microsoft.Insights/stable/2017-04-01/activityLogAlerts_API.json
-- Microsoft.Insights/stable/2015-04-01/activityLogs_API.json
-- Microsoft.Insights/stable/2015-04-01/eventCategories_API.json
-- Microsoft.Insights/stable/2015-04-01/tenantActivityLogs_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/metricDefinitions_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/metrics_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/baseline_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/calculateBaseline_API.json
+- microsoft.insights/stable/2015-04-01/autoscale_API.json
+- microsoft.insights/stable/2015-04-01/operations_API.json
+- microsoft.insights/stable/2016-03-01/alertRulesIncidents_API.json
+- microsoft.insights/stable/2016-03-01/alertRules_API.json
+- microsoft.insights/stable/2016-03-01/logProfiles_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
+- microsoft.insights/stable/2018-09-01/actionGroups_API.json
+- microsoft.insights/stable/2017-04-01/activityLogAlerts_API.json
+- microsoft.insights/stable/2015-04-01/activityLogs_API.json
+- microsoft.insights/stable/2015-04-01/eventCategories_API.json
+- microsoft.insights/stable/2015-04-01/tenantActivityLogs_API.json
+- microsoft.insights/preview/2017-05-01-preview/metricDefinitions_API.json
+- microsoft.insights/preview/2017-05-01-preview/metrics_API.json
+- microsoft.insights/preview/2017-11-01-preview/baseline_API.json
+- microsoft.insights/preview/2017-11-01-preview/calculateBaseline_API.json
 ```
 
 ### Tag: package-2017-08
@@ -190,15 +165,15 @@ These settings apply only when `--tag=package-2017-08` is specified on the comma
 
 ``` yaml $(tag) == 'package-2017-08'
 input-file:
-- Microsoft.Insights/stable/2015-04-01/autoscale_API.json
-- Microsoft.Insights/stable/2015-04-01/operations_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRulesIncidents_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRules_API.json
-- Microsoft.Insights/stable/2016-03-01/logProfiles_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
-- Microsoft.Insights/stable/2018-09-01/actionGroups_API.json
-- Microsoft.Insights/stable/2017-04-01/activityLogAlerts_API.json
+- microsoft.insights/stable/2015-04-01/autoscale_API.json
+- microsoft.insights/stable/2015-04-01/operations_API.json
+- microsoft.insights/stable/2016-03-01/alertRulesIncidents_API.json
+- microsoft.insights/stable/2016-03-01/alertRules_API.json
+- microsoft.insights/stable/2016-03-01/logProfiles_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
+- microsoft.insights/stable/2018-09-01/actionGroups_API.json
+- microsoft.insights/stable/2017-04-01/activityLogAlerts_API.json
 ```
 
 ### Tag: package-2018-01-01-only
@@ -207,8 +182,8 @@ These settings apply only when `--tag=package-2018-01-01-only` is specified on t
 
 ``` yaml $(tag) == 'package-2018-01-01-only'
 input-file:
-- Microsoft.Insights/stable/2018-01-01/metricDefinitions_API.json
-- Microsoft.Insights/stable/2018-01-01/metrics_API.json
+- microsoft.insights/stable/2018-01-01/metricDefinitions_API.json
+- microsoft.insights/stable/2018-01-01/metrics_API.json
 ```
 
 ### Tag: package-2018-03-01-only
@@ -217,8 +192,8 @@ These settings apply only when `--tag=package-2018-03-01-only` is specified on t
 
 ``` yaml $(tag) == 'package-2018-03-01-only'
 input-file:
-- Microsoft.Insights/stable/2018-03-01/metricAlert_API.json
-- Microsoft.Insights/stable/2018-03-01/actionGroups_API.json
+- microsoft.insights/stable/2018-03-01/metricAlert_API.json
+- microsoft.insights/stable/2018-03-01/actionGroups_API.json
 ```
 
 ### Tag: package-2018-04-16-only
@@ -227,7 +202,7 @@ These settings apply only when `--tag=package-2018-04-16-only` is specified on t
 
 ``` yaml $(tag) == 'package-2018-04-16-only'
 input-file:
-- Microsoft.Insights/stable/2018-04-16/scheduledQueryRule_API.json
+- microsoft.insights/stable/2018-04-16/scheduledQueryRule_API.json
 ```
 
 ### Tag: package-2015-04-01-only
@@ -236,11 +211,11 @@ These settings apply only when `--tag=package-2015-04-01-only` is specified on t
 
 ``` yaml $(tag) == 'package-2015-04-01-only'
 input-file:
-- Microsoft.Insights/stable/2015-04-01/activityLogs_API.json
-- Microsoft.Insights/stable/2015-04-01/autoscale_API.json
-- Microsoft.Insights/stable/2015-04-01/eventCategories_API.json
-- Microsoft.Insights/stable/2015-04-01/operations_API.json
-- Microsoft.Insights/stable/2015-04-01/tenantActivityLogs_API.json
+- microsoft.insights/stable/2015-04-01/activityLogs_API.json
+- microsoft.insights/stable/2015-04-01/autoscale_API.json
+- microsoft.insights/stable/2015-04-01/eventCategories_API.json
+- microsoft.insights/stable/2015-04-01/operations_API.json
+- microsoft.insights/stable/2015-04-01/tenantActivityLogs_API.json
 ```
 
 ### Tag: package-2016-03-01-only
@@ -249,10 +224,10 @@ These settings apply only when `--tag=package-2016-03-01-only` is specified on t
 
 ``` yaml $(tag) == 'package-2016-03-01-only'
 input-file:
-- Microsoft.Insights/stable/2016-03-01/alertRules_API.json
-- Microsoft.Insights/stable/2016-03-01/alertRulesIncidents_API.json
-- Microsoft.Insights/stable/2016-03-01/logProfiles_API.json
-- Microsoft.Insights/stable/2016-03-01/metricDefinitions_API.json
+- microsoft.insights/stable/2016-03-01/alertRules_API.json
+- microsoft.insights/stable/2016-03-01/alertRulesIncidents_API.json
+- microsoft.insights/stable/2016-03-01/logProfiles_API.json
+- microsoft.insights/stable/2016-03-01/metricDefinitions_API.json
 ```
 
 ### Tag: package-2016-09-01-only
@@ -261,8 +236,8 @@ These settings apply only when `--tag=package-2016-09-01-only` is specified on t
 
 ``` yaml $(tag) == 'package-2016-09-01-only'
 input-file:
-- Microsoft.Insights/stable/2016-09-01/metrics_API.json
-- Microsoft.Insights/stable/2016-09-01/serviceDiagnosticsSettings_API.json
+- microsoft.insights/stable/2016-09-01/metrics_API.json
+- microsoft.insights/stable/2016-09-01/serviceDiagnosticsSettings_API.json
 ```
 
 ### Tag: package-2017-04-01-only
@@ -271,8 +246,8 @@ These settings apply only when `--tag=package-2017-04-01-only` is specified on t
 
 ``` yaml $(tag) == 'package-2017-04-01-only'
 input-file:
-- Microsoft.Insights/stable/2017-04-01/actionGroups_API.json
-- Microsoft.Insights/stable/2017-04-01/activityLogAlerts_API.json
+- microsoft.insights/stable/2017-04-01/actionGroups_API.json
+- microsoft.insights/stable/2017-04-01/activityLogAlerts_API.json
 ```
 
 ### Tag: package-2017-05-01-preview-only
@@ -281,10 +256,10 @@ These settings apply only when `--tag=package-2017-05-01-preview-only` is specif
 
 ``` yaml $(tag) == 'package-2017-05-01-preview-only'
 input-file:
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/metricDefinitions_API.json
-- Microsoft.Insights/preview/2017-05-01-preview/metrics_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettings_API.json
+- microsoft.insights/preview/2017-05-01-preview/diagnosticsSettingsCategories_API.json
+- microsoft.insights/preview/2017-05-01-preview/metricDefinitions_API.json
+- microsoft.insights/preview/2017-05-01-preview/metrics_API.json
 ```
 
 ### Tag: package-2017-11-01-preview-only
@@ -293,13 +268,13 @@ These settings apply only when `--tag=package-2017-11-01-preview-only` is specif
 
 ``` yaml $(tag) == 'package-2017-11-01-preview-only'
 input-file:
-- Microsoft.Insights/preview/2017-11-01-preview/baseline_API.json
-- Microsoft.Insights/preview/2017-11-01-preview/calculateBaseline_API.json
+- microsoft.insights/preview/2017-11-01-preview/baseline_API.json
+- microsoft.insights/preview/2017-11-01-preview/calculateBaseline_API.json
 ```
 
 ---
-
 # Code Generation
+
 
 ## Swagger to SDK
 
@@ -317,6 +292,7 @@ swagger-to-sdk:
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_monitor']
 ```
+
 
 ## C#
 

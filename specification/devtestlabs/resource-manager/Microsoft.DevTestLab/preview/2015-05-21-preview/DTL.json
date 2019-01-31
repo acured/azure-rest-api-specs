@@ -3554,7 +3554,7 @@
             }
         },
         "GenerateUploadUriResponse": {
-            "description": "Response body for generating an upload URI.",
+            "description": "Reponse body for generating an upload URI.",
             "type": "object",
             "properties": {
                 "uploadUri": {

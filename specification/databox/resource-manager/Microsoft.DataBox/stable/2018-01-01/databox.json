@@ -397,11 +397,11 @@
         },
         "x-ms-long-running-operation": true,
         "x-ms-examples": {
-          "JobsDelete": {
-            "$ref": "./examples/JobsDelete.json"
+            "JobsDelete": {
+              "$ref": "./examples/JobsDelete.json"
+            }
           }
-        }
-      },
+        },
       "patch": {
         "tags": [
           "Jobs"
@@ -455,11 +455,11 @@
           }
         },
         "x-ms-long-running-operation": true,
-        "x-ms-examples": {
-          "JobsPatch": {
-            "$ref": "./examples/JobsPatch.json"
+        "x-ms-examples": {          
+            "JobsPatch": {
+              "$ref": "./examples/JobsPatch.json"
+            }
           }
-        }
       }
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataBox/jobs/{jobName}/bookShipmentPickUp": {
@@ -555,10 +555,10 @@
           }
         },
         "x-ms-examples": {
-          "JobsCancelPost": {
-            "$ref": "./examples/JobsCancelPost.json"
+            "JobsCancelPost": {
+              "$ref": "./examples/JobsCancelPost.json"
+            }
           }
-        }
       }
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataBox/jobs/{jobName}/listCredentials": {
@@ -773,15 +773,15 @@
               "values": [
                 {
                   "value": "DataBox",
-                  "description": "DataBox."
+                  "description": "Databox."
                 },
                 {
                   "value": "DataBoxDisk",
-                  "description": "DataBoxDisk."
+                  "description": "DataboxDisk."
                 },
                 {
                   "value": "DataBoxHeavy",
-                  "description": "DataBoxHeavy."
+                  "description": "DataboxHeavy."
                 }
               ]
             }
@@ -880,15 +880,15 @@
             "values": [
               {
                 "value": "DataBox",
-                "description": "DataBox orders."
+                "description": "Databox orders."
               },
               {
                 "value": "DataBoxDisk",
-                "description": "DataBoxDisk orders."
+                "description": "DataboxDisk orders."
               },
               {
                 "value": "DataBoxHeavy",
-                "description": "DataBoxHeavy orders."
+                "description": "DataboxHeavy orders."
               }
             ]
           }
@@ -919,18 +919,6 @@
         "totalBytesToProcess": {
           "format": "int64",
           "description": "Total amount of data to be processed by the job.",
-          "type": "integer",
-          "readOnly": true
-        },
-        "filesProcessed": {
-          "format": "int64",
-          "description": "Number of files processed by the job as of now.",
-          "type": "integer",
-          "readOnly": true
-        },
-        "totalFilesToProcess": {
-          "format": "int64",
-          "description": "Total number of files to be processed by the job.",
           "type": "integer",
           "readOnly": true
         }
@@ -1024,7 +1012,7 @@
             "values": [
               {
                 "value": "NotStarted",
-                "description": "Data copy hasn't started yet."
+                "description": "Data copy hasnt started yet."
               },
               {
                 "value": "InProgress",
@@ -1129,7 +1117,7 @@
       "x-ms-discriminator-value": "DataBoxDisk"
     },
     "DataBoxHeavyAccountCopyLogDetails": {
-      "description": "Copy log details for a storage account for DataBoxHeavy",
+      "description": "Copy log details for a storage account for Databox heavy",
       "type": "object",
       "allOf": [
         {
@@ -1154,7 +1142,7 @@
       "x-ms-discriminator-value": "DataBoxHeavy"
     },
     "DataBoxHeavyJobDetails": {
-      "description": "DataBoxHeavy Device Job Details",
+      "description": "Databox Heavy Device Job Details",
       "required": [
         "contactDetails",
         "shippingAddress",
@@ -1180,7 +1168,7 @@
       "x-ms-discriminator-value": "DataBoxHeavy"
     },
     "DataBoxHeavyJobSecrets": {
-      "description": "The secrets related to a DataBoxHeavy job.",
+      "description": "The secrets related to a databox heavy job.",
       "type": "object",
       "allOf": [
         {
@@ -1189,7 +1177,7 @@
       ],
       "properties": {
         "cabinetPodSecrets": {
-          "description": "Contains the list of secret objects for a DataBoxHeavy job.",
+          "description": "Contains the list of secret objects for a databox heavy job.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/DataBoxHeavySecret"
@@ -1200,7 +1188,7 @@
       "x-ms-discriminator-value": "DataBoxHeavy"
     },
     "DataBoxHeavySecret": {
-      "description": "The secrets related to a DataBoxHeavy.",
+      "description": "The secrets related to a databox heavy.",
       "type": "object",
       "properties": {
         "deviceSerialNumber": {
@@ -1237,7 +1225,7 @@
       }
     },
     "DataBoxJobDetails": {
-      "description": "DataBox Job Details",
+      "description": "Databox Job Details",
       "required": [
         "contactDetails",
         "shippingAddress",
@@ -1263,7 +1251,7 @@
       "x-ms-discriminator-value": "DataBox"
     },
     "DataboxJobSecrets": {
-      "description": "The secrets related to a DataBox job.",
+      "description": "The secrets related to a databox job.",
       "type": "object",
       "allOf": [
         {
@@ -1319,90 +1307,17 @@
       }
     },
     "DestinationAccountDetails": {
-      "description": "Details of the destination of the data",
+      "description": "Details for the destination account.",
       "required": [
-        "dataDestinationType"
+        "accountId"
       ],
       "type": "object",
       "properties": {
-        "dataDestinationType": {
-          "description": "Data Destination Type.",
-          "enum": [
-            "UnknownType",
-            "StorageAccount",
-            "ManagedDisk"
-          ],
-          "type": "string",
-          "x-ms-enum": {
-            "name": "DataDestinationType",
-            "modelAsExtensible": true,
-            "values": [
-              {
-                "value": "UnknownType",
-                "description": "Unknown type."
-              },
-              {
-                "value": "StorageAccount",
-                "description": "Storage Accounts ."
-              },
-              {
-                "value": "ManagedDisk",
-                "description": "Azure Managed disk storage."
-              }
-            ]
-          }
-        },
         "accountId": {
-          "description": "Arm Id of the destination where the data has to be moved.",
+          "description": "Destination storage account id.",
           "type": "string"
         }
-      },
-      "discriminator": "dataDestinationType"
-    },
-    "DestinationManagedDiskDetails": {
-      "description": "Details for the destination compute disks.",
-      "required": [
-        "resourceGroupId",
-        "stagingStorageAccountId",
-        "dataDestinationType"
-      ],
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/DestinationAccountDetails"
-        }
-      ],
-      "properties": {
-        "resourceGroupId": {
-          "description": "Destination Resource Group Id where the Compute disks should be created.",
-          "type": "string"
-        },
-        "stagingStorageAccountId": {
-          "description": "Arm Id of the storage account that can be used to copy the vhd for staging.",
-          "type": "string"
-        }
-      },
-      "x-ms-discriminator-value": "ManagedDisk"
-    },
-    "DestinationStorageAccountDetails": {
-      "description": "Details for the destination storage account.",
-      "required": [
-        "storageAccountId",
-        "dataDestinationType"
-      ],
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/DestinationAccountDetails"
-        }
-      ],
-      "properties": {
-        "storageAccountId": {
-          "description": "Destination Storage Account Arm Id.",
-          "type": "string"
-        }
-      },
-      "x-ms-discriminator-value": "StorageAccount"
+      }
     },
     "DestinationToServiceLocationMap": {
       "description": "Map of destination location to service location",
@@ -1464,7 +1379,7 @@
       "properties": {
         "expectedDataSizeInTeraBytes": {
           "format": "int32",
-          "description": "The expected size of the data, which needs to be transferred in this job, in terabytes.",
+          "description": "The expected size of the data, which needs to be transfered in this job, in tera bytes.",
           "type": "integer"
         },
         "jobStages": {
@@ -1522,15 +1437,15 @@
             "values": [
               {
                 "value": "DataBox",
-                "description": "DataBox orders."
+                "description": "Databox orders."
               },
               {
                 "value": "DataBoxDisk",
-                "description": "DataBoxDisk orders."
+                "description": "DataboxDisk orders."
               },
               {
                 "value": "DataBoxHeavy",
-                "description": "DataBoxHeavy orders."
+                "description": "DataboxHeavy orders."
               }
             ]
           }
@@ -1794,15 +1709,15 @@
             "values": [
               {
                 "value": "DataBox",
-                "description": "DataBox orders."
+                "description": "Databox orders."
               },
               {
                 "value": "DataBoxDisk",
-                "description": "DataBoxDisk orders."
+                "description": "DataboxDisk orders."
               },
               {
                 "value": "DataBoxHeavy",
-                "description": "DataBoxHeavy orders."
+                "description": "DataboxHeavy orders."
               }
             ]
           }
@@ -2173,8 +2088,7 @@
             "HCS",
             "BlockBlob",
             "PageBlob",
-            "AzureFile",
-            "ManagedDisk"
+            "AzureFile"
           ],
           "type": "string",
           "readOnly": true,
@@ -2188,7 +2102,7 @@
               },
               {
                 "value": "HCS",
-                "description": "StorSimple data format."
+                "description": "Storsimple data format."
               },
               {
                 "value": "BlockBlob",
@@ -2201,10 +2115,6 @@
               {
                 "value": "AzureFile",
                 "description": "Azure storage file format."
-              },
-              {
-                "value": "ManagedDisk",
-                "description": "Azure Compute Disk."
               }
             ]
           }
@@ -2384,15 +2294,15 @@
             "values": [
               {
                 "value": "DataBox",
-                "description": "DataBox."
+                "description": "Databox."
               },
               {
                 "value": "DataBoxDisk",
-                "description": "DataBoxDisk."
+                "description": "DataboxDisk."
               },
               {
                 "value": "DataBoxHeavy",
-                "description": "DataBoxHeavy."
+                "description": "DataboxHeavy."
               }
             ]
           }
@@ -2501,8 +2411,7 @@
             "Country",
             "Region",
             "Feature",
-            "OfferType",
-            "NoSubscriptionInfo"
+            "OfferType"
           ],
           "type": "string",
           "readOnly": true,
@@ -2520,7 +2429,7 @@
               },
               {
                 "value": "Region",
-                "description": "SKU is not available to push data to the requested Azure region."
+                "description": "SKU is not available to push data to the requested storage account region."
               },
               {
                 "value": "Feature",
@@ -2529,10 +2438,6 @@
               {
                 "value": "OfferType",
                 "description": "Subscription does not have required offer types for the SKU."
-              },
-              {
-                "value": "NoSubscriptionInfo",
-                "description": "Subscription has not registered to Microsoft.DataBox and Service does not have the subscription notification."
               }
             ]
           }
@@ -2639,15 +2544,15 @@
             "values": [
               {
                 "value": "DataBox",
-                "description": "DataBox."
+                "description": "Databox."
               },
               {
                 "value": "DataBoxDisk",
-                "description": "DataBoxDisk."
+                "description": "DataboxDisk."
               },
               {
                 "value": "DataBoxHeavy",
-                "description": "DataBoxHeavy."
+                "description": "DataboxHeavy."
               }
             ]
           }

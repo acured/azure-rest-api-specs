@@ -12,10 +12,11 @@
           {
             "location": "eastus",
             "properties": {
+              "accountId": "9760acf5-4638-11e7-9bdb-020073ca7778",
               "provisioningState": "Created",
               "poolId": "9760acf5-4638-11e7-9bdb-020073ca7778",
               "serviceLevel": "Premium",
-              "size": 4398046511104
+              "size": 12345
             }
           }
         ]

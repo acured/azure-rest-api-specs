@@ -6,7 +6,6 @@
         "hanaInstanceName": "myHanaInstance"
     },
     "responses": {
-        "200": {},
         "202": {}
     }
 }

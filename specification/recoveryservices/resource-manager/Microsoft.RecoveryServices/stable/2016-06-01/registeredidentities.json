@@ -247,7 +247,7 @@
       "type": "object",
       "properties": {
         "authType": {
-          "description": "This property will be used as the discriminator for deciding the specific types in the polymorphic chain of types.",
+          "description": "This property will be used as the discriminator for deciding the specific types in the polymorhpic chain of types.",
           "type": "string"
         },
         "certificate": {
@@ -256,7 +256,7 @@
           "type": "string"
         },
         "friendlyName": {
-          "description": "Certificate friendly name.",
+          "description": "Certificate friendlyname.",
           "type": "string"
         },
         "issuer": {

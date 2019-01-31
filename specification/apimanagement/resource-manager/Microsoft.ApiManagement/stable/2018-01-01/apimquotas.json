@@ -46,8 +46,8 @@
           "description": "Document describing how to configure the quota policies."
         },
         "x-ms-examples": {
-          "ApiManagementGetQuotaCounterKeys": {
-            "$ref": "./examples/ApiManagementGetQuotaCounterKeys.json"
+          "ApiManagementGetQuotaCounteryKeys": {
+            "$ref": "./examples/ApiManagementGetQuotaCounteryKeys.json"
           }
         },
         "parameters": [
@@ -144,8 +144,8 @@
           "description": "Document describing how to configure the quota policies."
         },
         "x-ms-examples": {
-          "ApiManagementGetQuotaCounterKeysByQuotaPeriod": {
-            "$ref": "./examples/ApiManagementGetQuotaCounterKeysByQuotaPeriod.json"
+          "ApiManagementGetQuotaCounteryKeysByQuotaPeriod": {
+            "$ref": "./examples/ApiManagementGetQuotaCounteryKeysByQuotaPeriod.json"
           }
         },
         "parameters": [

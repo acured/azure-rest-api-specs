@@ -224,7 +224,7 @@
             }
           },
           "200": {
-            "description": "Namespace successfully created.",
+            "description": "Namespace successfuly created.",
             "schema": {
               "$ref": "#/definitions/NamespaceResource"
             }
@@ -260,7 +260,7 @@
             "description": "No content."
           },
           "200": {
-            "description": "Namespace successfully deleted."
+            "description": "Namespace successfuly deleted."
           },
           "202": {
             "description": "Namespace delete request accepted."
@@ -340,7 +340,7 @@
             }
           },
           "200": {
-            "description": "Namespace successfully updated.",
+            "description": "Namespace successfuly updated.",
             "schema": {
               "$ref": "#/definitions/NamespaceResource"
             }
