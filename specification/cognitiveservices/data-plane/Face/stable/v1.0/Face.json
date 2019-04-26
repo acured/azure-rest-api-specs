@@ -984,6 +984,9 @@
           },
           {
             "$ref": "../../../Common/Parameters.json#/parameters/ImageUrl"
+          },
+          {
+            "$ref": "#/parameters/detectionModel"
           }
         ],
         "consumes": [
@@ -1043,6 +1046,9 @@
           },
           {
             "$ref": "#/parameters/returnRecognitionModel"
+          },
+          {
+            "$ref": "#/parameters/detectionModel"
           }
         ],
         "consumes": [
@@ -1088,6 +1094,9 @@
           },
           {
             "$ref": "../../../Common/Parameters.json#/parameters/ImageUrl"
+          },
+          {
+            "$ref": "#/parameters/detectionModel"
           }
         ],
         "produces": [
@@ -1699,6 +1708,9 @@
           },
           {
             "$ref": "../../../Common/Parameters.json#/parameters/ImageUrl"
+          },
+          {
+            "$ref": "#/parameters/detectionModel"
           }
         ],
         "consumes": [
@@ -2085,6 +2097,9 @@
           },
           {
             "$ref": "../../../Common/Parameters.json#/parameters/ImageUrl"
+          },
+          {
+            "$ref": "#/parameters/detectionModel"
           }
         ],
         "produces": [
@@ -2508,6 +2523,9 @@
           },
           {
             "$ref": "#/parameters/returnRecognitionModel"
+          },
+          {
+            "$ref": "#/parameters/detectionModel"
           }
         ],
         "consumes": [
@@ -2556,6 +2574,9 @@
           },
           {
             "$ref": "../../../Common/Parameters.json#/parameters/ImageStream"
+          },
+          {
+            "$ref": "#/parameters/detectionModel"
           }
         ],
         "produces": [
@@ -2601,6 +2622,9 @@
           },
           {
             "$ref": "../../../Common/Parameters.json#/parameters/ImageStream"
+          },
+          {
+            "$ref": "#/parameters/detectionModel"
           }
         ],
         "consumes": [
@@ -2649,6 +2673,9 @@
           },
           {
             "$ref": "../../../Common/Parameters.json#/parameters/ImageStream"
+          },
+          {
+            "$ref": "#/parameters/detectionModel"
           }
         ],
         "produces": [
@@ -2694,6 +2721,9 @@
           },
           {
             "$ref": "../../../Common/Parameters.json#/parameters/ImageStream"
+          },
+          {
+            "$ref": "#/parameters/detectionModel"
           }
         ],
         "consumes": [
@@ -4238,6 +4268,24 @@
       "type": "boolean",
       "in": "query",
       "x-ms-parameter-location": "method"
+    },
+    "detectionModel": {
+      "name": "detectionModel",
+      "description": "Name of detection model. Detection model is used to detect face from an uploaded image. A detection model name can be provided when performing Face - Detect or (Large)FaceList - AddFace or (Large)PersonGroupPerson - AddFace. The default value is 'detection_01', if latest model needed, please explicitly specify the model you need.",
+      "default": "detection_01",
+      "required": false,
+      "type": "string",
+      "in": "query",
+      "x-ms-parameter-location": "method",
+      "x-nullable": false,
+      "x-ms-enum": {
+        "name": "DetectionModel",
+        "modelAsString": true
+      },
+      "enum": [
+        "detection_01",
+        "detection_02"
+      ]
     }
   }
 }
