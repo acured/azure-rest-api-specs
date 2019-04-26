@@ -4271,7 +4271,7 @@
     },
     "detectionModel": {
       "name": "detectionModel",
-      "description": "Name of detection model. Detection model is used to detect face from an uploaded image. A detection model name can be provided when performing Face - Detect or (Large)FaceList - AddFace or (Large)PersonGroupPerson - AddFace. The default value is 'detection_01', if latest model needed, please explicitly specify the model you need.",
+      "description": "Name of detection model. Detection model is used to detect faces from images. A detection model name can be provided when performing Face - Detect or (Large)FaceList - AddFace or (Large)PersonGroupPerson - AddFace. The default value is 'detection_01', if latest model needed, please explicitly specify the model you need.",
       "default": "detection_01",
       "required": false,
       "type": "string",
