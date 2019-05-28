@@ -26,21 +26,30 @@ These are the global settings for the Cost Management API.
 
 ``` yaml
 openapi-type: arm
-tag: package-preview-2019-03
+tag: package-2019-01
 azure-validator: true
 ```
 
 ---
 
+### Tag: package-2019-01
+
+These settings apply only when `--tag=package-2019-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-2019-01'
+input-file:
+  - Microsoft.CostManagement/stable/2019-01-01/costmanagement.json
+```
 
 ### Tag: package-preview-2019-03
 
 These settings apply only when `--tag=package-preview-2019-03` is specified on the command line.
 
-```yaml $(tag) == 'package-preview-2019-03'
+``` yaml $(tag) == 'package-preview-2019-03'
 input-file:
   - Microsoft.CostManagement/preview/2019-03-01-preview/costmanagement.json
 ```
+
 ### Tag: package-2018-05
 
 These settings apply only when `--tag=package-2018-05` is specified on the command line.
@@ -62,6 +71,26 @@ directive:
     from: costmanagement.json
     where: $.paths
     reason: operations API for Microsoft.Billing are defined in Microsoft.Billing
+  - suppress: XmsResourceInPutResponse
+    from: costmanagement.json
+    where: '$.paths["/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.CostManagement/showbackRules/{ruleName}"].put'
+    reason: 'older PR, not forecast.'
+  - suppress: DefinitionsPropertiesNamesCamelCase
+    from: costmanagement.json
+    where: $.definitions.CustomChargeProperties.properties.ChargeValue
+    reason: 'older PR, not forecast.'
+  - suppress: DefinitionsPropertiesNamesCamelCase
+    from: costmanagement.json
+    where: $.definitions.CustomChargeProperties.properties.EffectiveMonth
+    reason: 'older PR, not forecast.'
+  - suppress: DefinitionsPropertiesNamesCamelCase
+    from: costmanagement.json
+    where: $.definitions.CustomChargeProperties.properties.EndMonth
+    reason: 'older PR, not forecast.'
+  - suppress: DefinitionsPropertiesNamesCamelCase
+    from: costmanagement.json
+    where: $.definitions.ShowbackRulesKind.properties.RuleType
+    reason: 'older PR, not forecast.'
 ```
 
 ### Tag: package-2018-08-preview
@@ -80,6 +109,15 @@ These settings apply only when `--tag=package-2018-12-preview` is specified on t
 ``` yaml $(tag) == 'package-2018-12-preview'
 input-file:
 - Microsoft.CostManagement/preview/2018-12-01-preview/costmanagement.json
+```
+
+### Tag: package-2019-01
+
+These settings apply only when `--tag=package-2019-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-2019-01'
+input-file:
+- Microsoft.CostManagement/stable/2019-01-01/costmanagement.json
 ```
 
 ---
@@ -169,6 +207,7 @@ output-folder: $(azure-libraries-for-java-folder)/azure-mgmt-costmanagement
 batch:
   - tag: package-2018-05
   - tag: package-2018-08-preview
+  - tag: package-2019-01
 ```
 
 ### Tag: package-2018-05 and java
@@ -206,6 +245,19 @@ Please also specify `--azure-libraries-for-java=<path to the root directory of y
 java:
   namespace: com.microsoft.azure.management.costmanagement.v2018_12_01_preview
   output-folder: $(azure-libraries-for-java-folder)/costmanagement/resource-manager/v2018_12_01_preview
+regenerate-manager: true
+generate-interface: true
+```
+
+### Tag: package-2019-01 and java
+
+These settings apply only when `--tag=package-2019-01 --java` is specified on the command line.
+Please also specify `--azure-libraries-for-java=<path to the root directory of your azure-sdk-for-java clone>`.
+
+``` yaml $(tag) == 'package-2019-01' && $(java) && $(multiapi)
+java:
+  namespace: com.microsoft.azure.management.costmanagement.v2019_01_01
+  output-folder: $(azure-libraries-for-java-folder)/costmanagement/resource-manager/v2019_01_01
 regenerate-manager: true
 generate-interface: true
 ```
